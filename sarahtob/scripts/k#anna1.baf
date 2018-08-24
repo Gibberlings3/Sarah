@@ -1,0 +1,29 @@
+IF
+Global("K#AnnaToBTalk","GLOBAL",0)
+See(Player1)
+InParty(Player1)
+InParty("K#Sarah")
+!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+Dialogue(Player1)
+END
+
+IF
+Global("K#AnnaToBTalk","GLOBAL",0)
+!See(Player1)
+InParty("K#Sarah")
+InParty(Player1)
+THEN
+RESPONSE #100
+MoveToObject(Player1)
+END
+
+IF
+Global("K#SarahToBQuest","GLOBAL",2)
+THEN
+RESPONSE #100
+Enemy()
+Attack(LastSeenBy())
+END
+

@@ -1,0 +1,153 @@
+@0 = ~Mod Sarah NPC Romance pour BG2:ToB~
+@1 = ~Sarah~
+@2 = ~Cela ne me plaît pas !~ [K#Sara00]
+@3 = ~Je suis plutôt satisfaite de la voie que suit notre groupe.~ [K#Sara01]
+@4 = ~J'espère que tu ne vas pas nous entraîner dans quelque chose que je regretterai plus tard.~ [K#Sara02]
+@5 = ~Je t'en prie, change d'attitude ou je vais être forcée de t'abandonner.~ [K#Sara03]
+@6 = ~Bien que je ne sois pas forcément d'accord avec cette décision, je ferai de mon mieux.~ [K#Sara04]
+@7 = ~Une petite pause serait bien agréable.~ [K#Sara05]
+@8 = ~A moins d'attendre qu'il se passe quelque chose, je suggère que nous partions.~ [K#Sara06]
+@9 = ~Préparez-vous à mourir !~ [K#Sara07]
+@10 = ~Lâchez vos armes et fuyez tant que vous le pouvez encore !~ [K#Sara08]
+@11 = ~Allez au diable !~ [K#Sara09]
+@12 = ~Au nom de Meilikki, je vais vous terrasser !~ [K#Sara10]
+@13 = ~Non !~ [K#Sara11]
+@14 = ~Je suis... désolée.~ [K#Sara12]
+@15 = ~S'il vous plaît, j'ai besoin de soins !~ [K#Sara13]
+@16 = ~En réalité, la forêt est le plus bel endroit que ce monde puisse nous offrir.~ [K#Sara14]
+@17 = ~Bien que la ville soit... intéressante, j'ai bien peur de ne trouver aucun plaisir à y vivre.~ [K#Sara15]
+@18 = ~Reste en alerte... nous n'avons pas la moindre idée de ce que nous pourrions trouver ici.~ [K#Sara16]
+@19 = ~Chaque jour qui passe dans la lumière, je rends grâce à Meilikki de nous protéger pendant nos heures sombres.~ [K#Sara17]
+@20 = ~J'ai peur que ma vue soit bien moins performante que de jour.~ [K#Sara18]
+@21 = ~Oui ?~ [K#Sara19]
+@22 = ~Je peux t'aider ?~ [K#Sara20]
+@23 = ~Tu as besoin de quelque chose ?~ [K#Sara21]
+@24 = ~Je suis là.~ [K#Sara22]
+@25 = ~Tu as besoin de quelque chose ?~ [K#Sara23]
+@26 = ~Je suis prête.~ [K#Sara24]
+@27 = ~Bien sûr.~ [K#Sara25]
+@28 = ~Sans problème.~ [K#Sara26]
+@29 = ~D'accord.~ [K#Sara27]
+@30 = ~Comme tu voudras.~ [K#Sara28]
+@31 = ~Pour sûr.~ [K#Sara29]
+@32 = ~Si tu en es certain.~ [K#Sara30] ~Si tu en es certaine.~ [K#Sara30]
+@33 = ~Oui j'y vais, un peu de patience s'il te plaît.~ [K#Sara31]
+@34 = ~Quoi ?~ [K#Sara32]
+@35 = ~Allons-y.~ [K#Sara33]
+@36 = ~Oui !~ [K#Sara34]
+@37 = ~J'ai échoué une fois ; cela n'arrivera plus !~ [K#Sara35]
+@38 = ~Cela ne marche pas !~ [K#Sara36]
+@39 = ~Désolée, mais je ne peux rien porter de plus.~ [K#Sara37]
+@40 = ~Lorsqu'on lui demande de parler de son passé, SARAH vous raconte qu'elle est originaire des bas-quartiers de la Porte de Baldur, où elle fut élevée par son père jusqu'à ce que celui-ci trouve une mort prématurée sous les coups d'un agresseur lorsqu'elle avait treize ans. Elle fut recueillie par le frère de son père, un rôdeur de la forêt de Bois-manteau, qui lui apprit tout ce qu'il savait au sujet de la nature et du combat. Elle admet préférer la compagnie des arbres à celle des gens, mais elle n'hésite jamais à aider quelqu'un dans le besoin. Bien qu'elle prétende être une personne tout à fait ordinaire, vous vous demandez s'il faut vraiment se fier aux apparences.~
+@41 = ~Gurien~
+@42 = ~Puis-je vous aider ?~ [K#SaraGK]
+@43 = ~Oui oui, je suis là.~ [K#SaraGL]
+@44 = ~ ~
+@45 = ~Anna~
+@46 = ~Qu'est-ce que c'est ?~ [K#SaraAO]
+@47 = ~Bon, je ne vais pas y passer la journée.~ [K#SaraAP]
+@48 = ~Potion~
+@49 = ~Remède pour Gurien~
+@50 = ~Si cette description apparait pendant le jeu, faites une reinstallation et essayez à nouveau, ou envoyez un email à theacefes (bohdi2185@msn.com).~
+@51 = ~Cette bouteille qui vous a été donnée par Anna, la mère de Sarah, est censée contenir le remède nécessaire pour annihiler la malédiction de Gurien.~
+@52 = ~Corps de Sarah~
+@53 = ~Sarah a été capturée et infectée du vampirisme par Bodhi, et vous avez dû la tuer. Il y a peut-être moyen de la rappeler à la vie, mais vous ne savez absolument pas comment.~
+@54 = ~Rupert~
+@55 = ~Sarah quitta <CHARNAME> peu de temps après les événements du Trône de Bhaal. Elle revint à Bois-Manteau raconter ses aventures à son oncle, et le trouva atteint d'une maladie incurable. Elle s'occupa de lui jusqu'à sa mort environ un an plus tard, et décida de retourner dans les collines d'Umar où sa petite maison était encore debout, bien qu'ayant besoin de réparations. Bien des années plus tard, Sarah continue à aider les voyageurs à traverser les forêts de la région et peu de gens savent à quel point elle fut impliquée dans l'un des événements les plus importants de l'histoire du monde.~
+@56 = ~Sarah resta aux côtés de <CHARNAME> pendant quelques années après les événements du Trône de Bhaal,appréciant les sollicitations dont ils furent assaillis à leur retour à Féérune. Peu de temps après que cette excitation ait fini par retomber, Sarah apprit que son oncle était atteint d'une maladie incurable et retourna donc rapidement dans la forêt de Bois-Manteau, où elle s'occupa de lui jusqu'à sa mort environ un an plus tard. A ce moment-là, Sarah sut que sa vie avait été changée pour toujours grâce à ses voyages avec <CHARNAME>, et qu'il était temps pour elle de rentrer dans les collines d'Umar. Elle fit ses adieux à <CHARNAME>, qui était devenu son ami le plus cher, et se remit à aider les voyageurs à traverser la région des collines d'Umar. Elle n'oublia jamais les aventures qu'elle avait vécues avec <CHARNAME> et les rares fois où un voyageur reconnaissait la célèbre aventurière qu'elle avait été, Sarah se contentait de sourire et de continuer à lui ouvrir la route.~
+@57 = ~Après les événements du Trône de Bhaal, Sarah revint à Bois-Manteau raconter ses aventures à son oncle, et le trouva atteint d'une maladie incurable. Elle s'occupa de lui jusqu'à sa mort environ un an plus tard, et décida de retourner dans les collines d'Umar où sa petite maison était encore debout, bien qu'ayant besoin de réparations. Bien des années plus tard, Sarah continue à aider les voyageurs à traverser les forêts de la région et peu de gens savent à quel point elle fut impliquée dans l'un des événements les plus importants de l'histoire du monde. Elle finit par abandonner la vie d'aventure qu'elle avait menée un court laps de temps avec <CHARNAME>, mais n'oublia jamais ni cette vie, ni l'amitié qu'elle avait partagée avec <CHARNAME>.~
+@58 = ~L'amour de Sarah pour <CHARNAME> ne fit que s'intensifier après les événements du Trône de Bhaal. Toutes deux retournèrent sur la Côte des Epées, où Sarah fit visiter à <CHARNAME> sa première maison dans les bas-quartiers de la Porte de Baldur qui, à sa surprise, n'étaient plus aussi pauvres et malfamés que dans son souvenir. Après avoir visité plusieurs villes de la Côte des Epées elles finirent par revenir à Bois-Manteau, pour y trouver l'oncle de Sarah atteint d'une maladie incurable. <CHARNAME> aida Sarah à s'occuper de son oncle jusqu'à sa mort, puis elles décidèrent de vivre ensemble pas très loin au nord de Château-Suif, où <CHARNAME> avait grandi. Sarah continua à guider les voyageurs à travers les bois environnants, <CHARNAME> l'accompagnant même une fois de temps en temps. Sarah se demanda souvent ce qu'aurait été sa vie si elle avait décidé de rester dans les collines d'Umar en ce jour fatidique où elle rencontra <CHARNAME>... Sa mère serait-elle encore en vie ? Mènerait-elle avec sa famille la vie qu'elle avait toujours souhaitée ? Mais ce genre de pensée se dissipait bien vite car Sarah savait qu'elle aimait et aimerait toujours son enfant de Bhaal, avec la certitude qu'il serait pour toujours sa véritable famille.~
+@59 = ~Bien qu'attristée par le départ de celle qu'elle croyait être son véritable amour, Sarah resta forte et tenta de poursuivre sa vie en retournant à Bois-Manteau raconter ses aventures à son oncle, et le trouva atteint d'une maladie incurable. Elle s'occupa de lui jusqu'à sa mort environ un an plus tard, et décida de retourner dans les collines d'Umar où sa petite maison était encore debout, bien qu'ayant besoin de réparations. Bien des années plus tard, Sarah continue à aider les voyageurs à traverser les forêts de la région et peu de gens savent à quel point elle fut impliquée dans l'un des événements les plus importants de l'histoire du monde. Elle finit par tomber amoureuse d'une jeune femme d'Athkatla, et toutes deux vécurent ensemble dans les collines d'Umar pendant des décennies. cependant Sarah n'oublia jamais <CHARNAME> et ne cessa jamais d'aimer cet enfant de Bhaal qui l'avait rendue forte, même pendant les périodes les plus difficiles.~ 
+
+
+// WeiDU prompts
+@-1000= "Le mod %TP2_FILE_NAME% contient"
+@-1001= "composants optionnels distincts.
+Pour gagner du temps, vous pouvez choisir ce que vous souhaitez faire d'eux
+au niveau general plutot que de repondre aux questions pour chacun.
+"
+@-1002= "Que faut-il faire de tous les composants qui NE sont PAS ENCORE installes ?
+Les [I]nstaller, les [S]auter, dem[A]nder pour chacun ? "
+@-1003= "Que faut-il faire de tous les composants qui sont DEJA installes ?
+Les [R]einstaller, les s[U]pprimer, les [S]auter, dem[A]nder pour chacun ? "
+
+@-1004= "S'IL VOUS PLAIT, envoyez par e-mail le fichier"
+@-1005= "a"
+
+@-1006= "Installer le composant ["
+@-1007= "] ?
+[R]einstaller, co[N]server, s[U]pprimer ou [Q]uitter ? "
+@-1008= "] ?
+[I]nstaller, [N]e pas installer ou [Q]uitter ? "
+
+@-1009= "Entrez une partie du nom du module : "
+
+@-1010= "Reinstallation du composant ["
+@-1011= "] "
+@-1012= "Reinstallation dans la langue"
+
+@-1013= "Suppression de l'ancienne installation de ["
+@-1014= "] au prealable..."
+@-1015= "SUPPRESSION REUSSIE DE L'ANCIEN"
+
+@-1016= "Installation en cours"
+@-1017= "ERREUR pendant l'installation de ["
+@-1018= "], retour a l'etat anterieur"
+@-1019= "INSTALLATION REUSSIE"
+@-1020= "Saute"
+@-1021= "Suppression de ["
+@-1022= "] (composant #"
+@-1023= ")"
+@-1024= "SUPPRESSION REUSSIE DE ["
+
+@-1025= "] ?
+[R]einstaller, co[N]server, s[U]pprimer, [Q]uitter ou choisir un parmi :"
+@-1026= "] ?
+[N]e pas installer, [Q]uitter ou choisir un parmi :"
+@-1027= " (installe actuellement)"
+
+@-1028= "Souhaitez-vous afficher les composants de ["
+@-1029= "] ?
+[Y]Oui, [N]on ? "
+
+@-1030= "] ?
+choisir un parmi :"
+@-1031= "] ?
+[R]einstaller, co[N]server, [Q]uitter ou choisir un parmi :"
+@-1032= "INSTALLATION ECHOUEE A CAUSE D'ERREURS"
+@-1033= "INSTALLATION AVEC DES ALERTES"
+@-1034= "Souhaitez-vous afficher les instructions (ReadMe) ? [Y]Oui [N]on"
+@-1035= "Dans la langue"
+
+@-1036= "Saute le GROUPE ["
+@-1037= "] pour cause d'absence des pre-requis."
+
+@-1038= "dem[A]nder pour chaque composant, tout [S]auter, ou choisir une selection pre-definie :"
+@-1039= "dem[A]nder pour chaque composant, [R]einstaller la configuration courante, tout s[U]pprimer, tout [S]auter, ou choisir une selection pre-definie :"
+
+@-1040= "
+Veuillez choisir la langue dans laquelle vous souhaitez jouer au jeu.
+Si par la suite vous desirez jouer au jeu dans une langue differente, il vous
+faudra editer le fichier weidu.conf et reinstaller vos mods.
+"
+@-1041= "Tcheque"
+@-1042= "Allemand"
+@-1043= "Anglais"
+@-1044= "Espagnol"
+@-1045= "Francais"
+@-1046= "Italien"
+@-1047= "Polonais"
+@-1048= "Portugais"
+@-1049= "Turc"
+@-1050= "Japonais"
+@-1051= "Coreen"
+@-1052= "Chinois simplifie"
+
+@-1060= "
+Ce jeu est disponible en plusieurs langues mais WeiDU ne sait pas laquelle a ete choisie quand ce mod a ete installe.
+
+Veuillez indiquer quelle langue du jeu a ete utilisee quand vous avez installe ce mod. Votre choix servira jusqu'a ce que WeiDU s'arrete mais ne sera pas memorise.
+"
+@-1061= "
+Utilisation de"
+@-1062= " et "

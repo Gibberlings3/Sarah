@@ -1,0 +1,79 @@
+// If Sarah is Not Friend or Lover
+
+IF
+    Global("StartEndBios","AR6200",1)
+    InParty("K#Sarah")
+    GlobalLT("K#SarahRomanceActive","GLOBAL",2)
+    Global("K#SarahFriendshipActive","GLOBAL",0)
+    Global("K#SarahBio","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetGlobal("K#SarahBio","GLOBAL",1)
+        TextScreen("K#SARAD")
+        SmallWait(1)
+        Continue()
+END
+
+// If Sarah is Friend
+
+IF
+    Global("StartEndBios","AR6200",1)
+    InParty("K#Sarah")
+    Global("K#SarahRomanceActive","GLOBAL",0)
+    Global("K#SarahFriendshipActive","GLOBAL",1)
+    Global("K#SarahBio","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetGlobal("K#SarahBio","GLOBAL",1)
+        TextScreen("K#SARAD1")
+        SmallWait(1)
+        Continue()
+END
+
+// If Sarah is Friend but PC is god
+
+IF
+    Global("StartEndBios","AR6200",1)
+    InParty("K#Sarah")
+    Global("PlayerChoseEssence","GLOBAL",1)
+    Global("K#SarahRomanceActive","GLOBAL",0)
+    Global("K#SarahFriendshipActive","GLOBAL",1)
+    Global("K#SarahBio","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetGlobal("K#SarahBio","GLOBAL",1)
+        TextScreen("K#SARAD2")
+        SmallWait(1)
+        Continue()
+END
+
+// If Sarah is Lover
+
+IF
+    Global("StartEndBios","AR6200",1)
+    InParty("K#Sarah")
+    Global("K#SarahRomanceActive","GLOBAL",2)
+    Global("K#SarahBio","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetGlobal("K#SarahBio","GLOBAL",1)
+        TextScreen("K#SARAD3")
+        SmallWait(1)
+        Continue()
+END
+
+// If Sarah is Lover but PC is god
+
+IF
+    Global("StartEndBios","AR6200",1)
+    InParty("K#Sarah")
+    Global("PlayerChoseEssence","GLOBAL",1)
+    Global("K#SarahRomanceActive","GLOBAL",2)
+    Global("K#SarahBio","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetGlobal("K#SarahBio","GLOBAL",1)
+        TextScreen("K#SARAD4")
+        SmallWait(1)
+        Continue()
+END

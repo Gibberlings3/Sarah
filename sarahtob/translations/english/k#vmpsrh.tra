@@ -1,0 +1,47 @@
+@0    = ~You follow in the hopes of retrieving something dear to you. I say that the longer you keep this up, the more you will lose.~
+@1    = ~Consider young Sarah here.  Wouldn't it be awful if something happened to one of you?~
+@2    = ~We do not fear you, demon!~
+@3    = ~But I wonder, does she fear losing you?  Pay attention <CHARNAME>.  Follow me further and you will lose more than you can imagine!  Starting now!~
+@4    = ~The Final Battle with Bodhi.
+
+Bodhi appeared in an ambush shortly before I reached her haven, warning me that she was aware of my pursuit and stealing from me the one person that is dearest to my heart: Sarah.  Before she vanished and unleashed more of her undead creations upon me, Bodhi warned me that if I continue I will lose even more than I thought possible.  I cannot give up on the Rhynn Lanthorn... but now the life and immortal soul of the one I love is at stake, as well!~
+@5    = ~But... no, I have already prepared much for this meeting, <CHARNAME>. I did warn you that you would suffer great loss if you continued your push towards me.  I did not lie.~
+@6    = ~You have taken too much already!  You will return both Imoen's soul and Sarah!~
+@7    = ~And you have delivered on that promise.  Return Sarah and perhaps I will be merciful.~
+@8    = ~I would have hunted you for your theft of Sarah alone.  She is very important to me.~
+@9    = ~You place too much confidence in sentiment.  The theft of Sarah will not save you.~
+@10   = ~She is lost to you, <CHARNAME>.  Sarah was quite receptive to my discipline.  I doubt your fumbling could have inspired the loyalty I have taken with a bite and a gaze.~
+@11   = ~The Final Battle with Bodhi.
+
+Bodhi has turned Sarah into a vampire!  Or... or very nearly.  The process may not have been completed in the short time Bodhi has had her.  Hopefully something can be done or I will have lost her.  Perhaps the elven war sage might know some way of restoration... or Elhan...~
+@12   = ~An interesting ploy, though I am sure her fate will still serve as an example, whether you wish her back or not.~
+@13   = ~Whatever you desire, mistress.~
+@14   = ~Don't you see, <CHARNAME>?  She is not even fully turned and she has betrayed you.  Prepare to die at your lover's hand!~
+@15   = ~Elhan!  I've the half vampire body of Sarah here because of you!  You'll tell me now!~
+@16   = ~A friend is afflicted by vampirism.  An old book suggested that followers of Oghma might know something about that.~
+@17   = ~I'm looking for information about a tome that details the curing of Vampirism.~
+@18   = ~Have you come seeking wisdom from the Binder of What is Known? The Wise God stands ready.~
+@19   = ~No, thank you, I have no need of help at the moment.~
+@20   = ~I lost a loved one in a battle with his sister, Bodhi.  I seek a means of curing her.~
+@21   = ~A loved one was taken by a vampire. What can I expect when I find them?~
+@22   = ~Someone I care about has fallen to a vampire. Is there any way to save them?~
+@23   = ~I....what?~ [K#Sara1D]
+@24   = ~(She looks up at you.)~
+@25   = ~<CHARNAME>?~
+@26   = ~I...I was a vampire, <CHARNAME>.  I was one of *them*. And I...I tried to kill you! I am so sorry, <CHARNAME>, honestly, I had no control over what I was doing! Please, believe me!~ [K#Sara2D]
+@27   = ~It's all right, Sarah. It's over now.~
+@28   = ~The Final Battle with Bodhi.
+
+While I had feared for some time that Bodhi's final revenge on me would be to take away Sarah forever, it seems that the information in the lorebook was right...  Amaunator's idol has restored Sarah not only to life, but has removed the vampiric curse from her, as well.~
+@29   = ~It's all right, my love. She can't hurt you anymore. Gods, I was so worried...~
+@30   = ~It doesn't matter. I got what I came for from Bodhi and now she's out of the way.~
+@31   = ~It's...it's over? Good then. We should go.~ [K#Sara3D]
+@32   = ~Yes.  Please, join with me again.~
+@33   = ~I'm sorry, but I don't have room for you in the party right now.~
+@34   = ~Doesn't matter...? <CHARNAME>, I was a *vampire*. I was a creature I despise more than any other creature. Don't you care?~ [K#Sara4D]
+@35   = ~I'm sorry, Sarah, I didn't mean anything by that, it's just that it's been a long day and...well, it's over now.~
+@36   = ~Not really. I just killed Bodhi to get the Lanthorn.~
+@37   = ~What...? Fine. After all that and you're just going to act like some pig!~ [K#Sara5D]
+@38   = ~Goodbye, <CHARNAME>.~
+@39   = ~(She grabs your arm to pull you towards her and kisses you.)~
+@40   = ~Thank you.~ [K#Sara6D]

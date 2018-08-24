@@ -1,0 +1,18 @@
+IF
+Global("K#SarahRomanceActive","GLOBAL",2)
+Global("K#SarahToBQuestComplete", "GLOBAL",2)
+GlobalLT("K#SarahLovetalkToB","GLOBAL", 8)
+Global("K#UltraSurfboard","GLOBAL",0)
+TimeOfDay(NIGHT)
+AreaType(FOREST)
+InParty(Myself)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+IncrementGlobal("K#UltraSurfboard","GLOBAL",1)
+PlaySong(0)
+PlaySound("")
+Interact(Player1)
+END

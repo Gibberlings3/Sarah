@@ -1,0 +1,7 @@
+IF
+Global("K#SarahVampire","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("K#SarahVampire","GLOBAL",2)
+CreateCreature("K#VMPSRH",[1473.332],2)
+END

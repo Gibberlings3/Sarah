@@ -1,0 +1,232 @@
+// Script for setting up LTs for ToB
+
+IF
+  Global("K#SarahPCRomance","GLOBAL",0)
+  Global("K#SarahRomanceActive","GLOBAL",2)
+THEN
+    RESPONSE #100
+             SetGlobal("K#SarahPCRomance","GLOBAL",1)
+             SetGlobal("K#SarahFriendshipActive","GLOBAL",0)
+             SetGlobal("K#SarahLovetalkToB","GLOBAL",1) RealSetGlobalTimer("K#SarahToBLove","GLOBAL",1500)
+END
+
+// If Sarah and PC didn't get to "2" of romance but want to be friends
+
+IF
+  Global("K#SarahPCRomance","GLOBAL",0)
+  !Global("K#SarahRomanceActive","GLOBAL",2)
+THEN
+    RESPONSE #100
+             SetGlobal("K#SarahPCRomance","GLOBAL",1)
+             SetGlobal("K#SarahFriendshipActive","GLOBAL",1)
+             SetGlobal("K#SarahBanterToB","GLOBAL",1) RealSetGlobalTimer("K#SarahToBFriend","GLOBAL",1500)
+END
+
+
+// If We Dont Want Sarah to Flirt anymore
+
+IF
+Global("K#SarahFriendshipActive","GLOBAL",3)
+THEN
+RESPONSE #100
+SetGlobal("K#SarahNoFlirt","GLOBAL",1)
+END
+
+
+// FateSpirit
+
+IF
+Global("K#SarahSummoned","GLOBAL",1)
+Global("K#SarahFriendshipActive","GLOBAL",1)
+Global("K#SarahHello","GLOBAL",0)
+See(Player1)
+THEN
+RESPONSE #100
+MoveToObject(Player1)
+SetGlobal("K#SarahHello","GLOBAL",1)
+END
+
+IF
+Global("K#SarahSummonedLove","GLOBAL",1)
+Global("K#SarahRomanceActive","GLOBAL",2)
+Global("K#SarahHelloLove","GLOBAL",0)
+See(Player1)
+THEN
+RESPONSE #100
+MoveToObject(Player1)
+SetGlobal("K#SarahHelloLove","GLOBAL",1)
+END
+
+// Friendship Talks: there are 3
+
+IF
+RealGlobalTimerExpired("K#SarahToBFriend","GLOBAL")
+Global("K#SarahFriendshipActive","GLOBAL",1) // only if friendship is active
+InParty("K#Sarah")
+See(Player1)
+!ActuallyInCombat()
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+OR(3)
+Global("K#SarahBanterToB","GLOBAL", 1)
+Global("K#SarahBanterToB","GLOBAL", 3)
+Global("K#SarahBanterToB","GLOBAL", 5)
+THEN
+RESPONSE #100
+IncrementGlobal("K#SarahBanterToB","GLOBAL", 1)
+END
+
+IF
+RealGlobalTimerExpired("K#SarahToBFriend","GLOBAL")
+Global("K#SarahFriendshipActive","GLOBAL",1) // only if friendship is active
+InParty("K#Sarah")
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+OR(3)
+Global("K#SarahBanterToB","GLOBAL", 2)
+Global("K#SarahBanterToB","GLOBAL", 4)
+Global("K#SarahBanterToB","GLOBAL", 6)
+THEN
+RESPONSE #100
+PlaySong(0)
+PlaySound("K#SarM6")
+Interact(Player1)
+END
+
+
+// LoveTalks: There are 6
+
+// 1-3
+
+IF
+RealGlobalTimerExpired("K#SarahToBLove","GLOBAL")
+InParty("K#Sarah")
+See(Player1)
+!ActuallyInCombat()
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+Global("K#SarahRomanceActive","GLOBAL",2)
+OR(3)
+Global("K#SarahLovetalkToB","GLOBAL", 1)
+Global("K#SarahLovetalkToB","GLOBAL", 3)
+Global("K#SarahLovetalkToB","GLOBAL", 5)
+THEN
+RESPONSE #100
+IncrementGlobal("K#SarahLovetalkToB","GLOBAL", 1)
+END
+
+IF
+RealGlobalTimerExpired("K#SarahToBLove","GLOBAL")
+InParty("K#Sarah")
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+Global("K#SarahRomanceActive","GLOBAL",2)
+OR(3)
+Global("K#SarahLovetalkToB","GLOBAL", 2)
+Global("K#SarahLovetalkToB","GLOBAL", 4)
+Global("K#SarahLovetalkToB","GLOBAL", 6)
+THEN
+RESPONSE #100
+PlaySong(0)
+PlaySound("K#SarM4")
+Interact(Player1)
+END
+
+// 4-6
+
+IF
+RealGlobalTimerExpired("K#SarahToBLove","GLOBAL")
+InParty("K#Sarah")
+See(Player1)
+!ActuallyInCombat()
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+Global("K#SarahRomanceActive","GLOBAL",2)
+OR(2)
+Global("K#SarahLovetalkToB","GLOBAL", 7)
+Global("K#SarahLovetalkToB","GLOBAL", 9)
+THEN
+RESPONSE #100
+IncrementGlobal("K#SarahLovetalkToB","GLOBAL", 1)
+END
+
+IF
+RealGlobalTimerExpired("K#SarahToBLove","GLOBAL")
+InParty("K#Sarah")
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+Global("K#SarahToBQuestComplete", "GLOBAL",2)
+Global("K#SarahRomanceActive","GLOBAL",2)
+OR(2)
+Global("K#SarahLovetalkToB","GLOBAL", 8)
+Global("K#SarahLovetalkToB","GLOBAL", 10)
+THEN
+RESPONSE #100
+PlaySong(0)
+PlaySound("K#SarM7")
+Interact(Player1)
+END
+
+// Steamy Talk Outdoors
+
+
+
+
+// Quest: Anna's return
+
+// Anna Spawn
+
+IF
+InParty(Myself)
+Global("K#SarahLovetalkToB","GLOBAL",7)
+Global("K#ANNA1Exists","GLOBAL",0)
+AreaType(OUTDOOR)
+!Exists("K#ANNA1")
+THEN
+RESPONSE #100
+SetGlobal("K#ANNA1Exists","GLOBAL",1)
+SetGlobal("K#SarahToBQuestComplete","GLOBAL",0)
+SetGlobal("K#SarahToBQuest","GLOBAL",0)
+CreateCreatureObjectOffScreen("K#ANNA1",Myself,0,0,0)
+END
+
+// Talk After Anna Dies
+
+IF
+InParty(Myself)
+Dead("K#ANNA1")
+Global("K#SarahToBQuestComplete","GLOBAL",0)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("K#SarahToBQuestComplete","GLOBAL",1)
+Interact(Player1)
+END
+
+// Reputation
+
+IF ReputationLT(Player1,3)
+Global("K#RepSarah","LOCALS",0)
+THEN
+RESPONSE #100
+StartDialogNoSet(Player1)
+END
+
+// Rupert Evil
+IF
+Global("K#RupertEvil","GLOBAL",1)
+THEN
+RESPONSE #100
+Kill("K#LOVES")
+ActionOverride("K#Loves",DestroySelf())
+SetGlobal("K#RupertEvil","GLOBAL",2)
+SetGlobal("K#SarahLovedOne","GLOBAL",2)
+END
+
+
+

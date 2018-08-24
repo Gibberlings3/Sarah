@@ -1,0 +1,274 @@
+// dialogue amitié 1
+
+@0    = ~La vie est pleine de surprises, n'est-ce pas <CHARNAME> ?~ [K#sar015]
+@1    = ~Que veux-tu dire ?~
+@2    = ~Je suis bien d'accord avec toi...~
+@3    = ~Ce n'est vraiment pas le moment de discuter, plus tard peut-être ?~
+@4    = ~Sarah, je me fiche complètement de ce que tu vas me raconter alors pourrais-tu arrêter de bavarder ?~
+@5    = ~Eh bien... Je présume que c'est à cause de la manière dont les choses se passent depuis que nous voyageons ensemble.~
+@6    = ~Quelque part, j'étais une personne ordinaire qui s'occupait de ses petites affaires et j'en suis arrivée... là.~
+@7    = ~Euh ?~
+@8    = ~Peux-tu m'expliquer ce "là"?~
+@9    = ~Je crois que je comprends ce que tu veux dire.~
+@10   = ~Argh, si c'est pour me raconter des choses qui n'ont aucun sens, autant que tu arrêtes de parler.~
+@11   = ~(Elle rit)~
+@12   = ~Désolée, je crois que je suis en train de t'embrouiller. Ce que j'ai dit n'était pas très clair, hein ?~
+@13   = ~Non, je veux dire que... je trouve assez impressionnant le fait de passer du statut de citoyenne ordinaire de Féérune à celui de partie prenante dans ce qui est peut-être l'évènement le plus important depuis des générations !~
+@14   = ~Voyager à tes côtés est passionnant, et tout ce que nous faisons quotidiennement constitue pour moi une nouvelle expérience.~
+@15   = ~Mais cela se révèle aussi dangereux et parfois... très risqué.~
+@16   = ~S'il te plaît ne crois pas que je remette en question ton autorité et tes choix, mais je ne peux m'empêcher de penser qu'il viendra un moment, très bientôt...~
+@17   = ~Un moment où j'aurai à faire des choix. J'espère simplement faire les bons.~
+@18   = ~(Soupir)... Remettons-nous en route.~
+@19   = ~Vraiment ?~
+@20   = ~Comme tu voudras, <CHARNAME>. De toute façon, il vaudrait mieux que nous nous remettions à notre quête.~
+@21   = ~Tu... d'accord.~
+@22   = ~Je ne m'attendais pas à ce que tu me manques de respect à ce point. Je te fiche la paix.~
+
+// dialogue amitié 2
+
+@23   = ~(Quelque chose semble bouleverser Sarah.)~
+@24   = ~Sarah, tout va bien ?~
+@25   = ~Veux-tu bien arrêter de prendre cet air si déprimé ? Nous avons une quête à accomplir !~
+@26   = ~(La laisser tranquille.)~
+@27   = ~Hum ? Oh, désolée <CHARNAME>.~
+@28   = ~Tout va bien... J'étais en train de penser à quelque chose, c'est tout.~
+@29   = ~Penser ? Ha ha, c'est dangereux ce genre de chose.~
+@30   = ~A quoi penses-tu ?~
+@31   = ~Eh bien arrête de penser et commence à agir. Tu me fais perdre du temps.~
+@32   = ~(Elle vous lance un regard furieux.)~
+@33   = ~Tu sais... Je pensais vraiment que ma vie serait meilleure si je faisais partie de ton équipe. Je présume que je me suis trompée.~
+@34   = ~Adieu <CHARNAME>.~
+@35   = ~(Sarah vous regarde un moment et sourit, mais ne dit rien.)~
+@36   = ~(Elle lève les yeux au ciel.)~
+@37   = ~Très amusant. Mais si tu veux savoir, j'étais en train de penser à mon oncle.~
+@38   = ~Cela fait tellement longtemps que je ne l'ai pas vu. Il me manque.~
+@39   = ~Tu devrais lui écrire.~
+@40   = ~Et en quel honneur ceci devrait-il m'intéresser ?~
+@41   = ~Je pensais à mon oncle.~
+@42   = ~Quelle bonne idée !~
+@43   = ~(Elle farfouille dans son sac et en sort un morceau de parchemin.)~
+@44   = ~Je me sens stupide de ne pas y avoir pensé avant. Je suppose que tous ces évènements passionnants qui se sont produits dernièrement m'ont fait perdre mon bon sens, hein.~
+@45   = ~Je vais tout lui raconter. Il croit probablement que je suis toujours dans les collines d'Umar ! Oh, et il faut absolument que je lui parle de toi !~
+@46   = ~Je ne lui raconterai que les bonnes choses c'est promis.~
+@47   = ~(Elle vous fait un clin d'oeil.)~
+@48   = ~Ne me regarde pas comme ça. Il est de notoriété publique que je fais une ou deux blagues de temps en temps.~
+
+// dialogue amitié 3
+
+@49   = ~<CHARNAME>... Il faut que je te parle, si tu as une minute.~ [K#sar016]
+@50   = ~Bien sûr Sarah, à quel sujet ?~
+@51   = ~Oui Sarah ?~
+@52   = ~Est-ce qu'il y a un problème ? On dirait que quelque chose te tracasse.~
+@53   = ~Nous n'avons vraiment pas le temps, Sarah.~
+@54   = ~(Elle a l'air accablée.)~
+@55   = ~Je... j'aurais vraiment voulu que tu m'écoutes. Mais je suppose que... si c'est ce que tu veux...~
+@56   = ~Qu'il en soit ainsi.~
+@57   = ~Oh non, tout va bien. C'est juste que...~
+@58   = ~Cela fait un bon moment que nous nous connaissons maintenant. Je ne peux pas dire que j'ai été pour toi la personne la plus utile qui soit, mais ce qui est certain, c'est que j'ai fait de mon mieux.~
+@59   = ~Oui je sais, il y a eu des jours où j'aurais pu faire plus, et mieux.~
+@60   = ~Mais tu fais preuve de patience à mon égard. Tu sais certainement mieux que quiconque que je suis loin d'être la meilleure combattante, que je ne suis pas la personne la plus amicale ou extravertie qui soit, et que j'ai parfois beaucoup de mal à tirer un trait sur mon passé.~
+@61   = ~Sarah... qu'est-ce que tu racontes ?~
+@62   = ~(Ne rien dire.)~
+@63   = ~Je te suis très reconnaissant de ta compagnie, Sarah. Tu es une camarade que j'apprécie, et une grande amie.~
+@64   = ~(Elle rougit et prend votre main.)~
+@65   = ~Merci <CHARNAME>. Je t'aime beaucoup, moi aussi.~
+@66   = ~(Elle vous regarde et fait un large sourire.)~
+@67   = ~Hé, ne t'inquiète pas <CHARNAME>. Je ne vais pas te faire une déclaration d'amour éternel.~
+@68   = ~Mais plus sérieusement...~
+@69   = ~Ce que je veux dire c'est que j'apprécie le fait que tu supportes mes défauts, mais tu me montres également que je peux être plus qu'une simple guide forestière.~
+@70   = ~Je vais te faire une promesse, <CHARNAME>, et j'ai bien l'intention de la tenir. Guerre des enfants de Bhaal ou pas, enfers, peu importe... tu pourrais être demi-tyrannoeil que cela ne changerait rien !~
+@71   = ~Enfin... peut-être un peu quand même... (elle vous fait un clin d'oeil)~
+@72   = ~Tu as plus que gagné ma confiance, et je me sens très honorée d'avoir gagné ton amitié. Je serai à tes côtés jusqu'au bout, <CHARNAME>.~
+
+// dialogue romance tob 1
+
+@73   = ~<CHARNAME> ?~
+@74   = ~(Elle prend votre main et la serre fort.)~
+@75   = ~Je suis inquiète.~ [K#sar017]
+@76   = ~A quel sujet ?~
+@77   = ~Il n'y a aucune raison de s'inquiéter.~
+@78   = ~Que se passe-t-il ?~
+@79   = ~Ce qui m'inquiète, c'est que tu causes vraiment trop.~
+@80   = ~Que... quoi ? Comment peux-tu... Tu sais quoi ? Oublie ce que je viens de dire. Inutile que je perde du temps.~
+@81   = ~Vraiment ?~
+@82   = ~c'est l'avenir qui m'inquiète, <CHARNAME>.~
+@83   = ~Les... les choses changent ; et je dirais même plutôt rapidement. Parfois je ne comprends même plus dans quel monde je vis... qui sont vraiment nos ennemis ou nos alliés.~
+@84   = ~Et qui *tu* es.~
+@85   = ~Comment ? Mais de quoi parles-tu ? Je suis toujours la même personne.~
+@86   = ~Mais tu as dit que cela n'avait pas d'importance pour toi que je sois un enfant de Bhaal !~
+@87   = ~Là tu dépasses les bornes. Je ne te laisserai pas me planter un couteau dans le dos !~
+@88   = ~Oh je t'en prie, ne va pas croire que je ne te fais pas confiance !~
+@89   = ~(elle se penche et vous embrasse.)~
+@90   = ~Je t'aime, <CHARNAME>, et je te fais plus confiance qu'à n'importe qui d'autre !~
+@91   = ~Je m'inquiète au sujet de ce qui nous entoure, à propos des gens avec qui nous nous associons... je me fais du souci car le monde devient tous les jours de plus en plus dangereux.~
+@92   = ~Et s'il devait t'arriver malheur, je ne crois pas que je le supporterais.~
+@93   = ~(Elle mord sa lèvre inférieure et soupire.)~
+@94   = ~Désolée <CHARNAME>, je présume que je m'angoisse pour rien.~
+@95   = ~Et je ne supporterais pas non plus qu'il t'arrive quoi que ce soit, Sarah. (Vous l'embrassez avec passion)~
+@96   = ~Tout ira bien, je te le promets. (vous l'embrassez)~
+@97   = ~Oui, c'est absolument certain. Il serait plus que souhaitable qu'à partir de maintenant tu te taises pour de bon.~
+@98   = ~(Elle accepte avec joie votre baiser et vous serre fort dans ses bras, avant de s'écarter lentement.)~
+@99   = ~Merci <CHARNAME>. Je... je crois que ça va un peu mieux.~
+@100  = ~(Elle se serre contre vous comme si sa vie en dépendait. Après quelques secondes, elle s'écarte lentement.)~
+
+// dialogue romance tob 2
+
+@101  = ~Dis-moi, qu'est-ce que ça fait d'être célèbre, et tout ce qui va avec ?~ [K#sar018]
+@102  = ~Je dirais plutôt "tristement célèbre", hein. Mais sérieusement, cela n'a rien de génial. Parfois je préfèrerais être une simple personne normale.~
+@103  = ~C'est absolument fabuleux ! Je me sens de plus en plus puissante à chaque jour qui passe, et j'ai bien l'intention de continuer dans cette voie.~
+@104  = ~Je me fiche complètement de ce que les gens pensent de moi.~
+@105  = ~Désolée Sarah, mais ce n'est pas vraiment le bon moment pour discuter. Plus tard peut-être ?~
+@106  = ~(Elle prend un air légèrement déçu.)~
+@107  = ~Comme tu voudras ma chérie. Avec toute cette excitation autour de nous, je voulais juste essayer de savoir comment tu te sentais..~
+@108  = ~(Elle regarde au loin, comme si elle ne vous voyait pas.)~
+@109  = ~Tant de bouleversements se produisent.~
+@110  = ~Je vois.~
+@111  = ~(Elle vous prend le bras.)~
+@112  = ~Veille juste... à ce que cela ne te monte pas à la tête. Le pouvoir peut être dangereux, tu le sais certainement.~
+@113  = ~Surtout qu'on finit toujours par trouver quelqu'un de plus puissant que soi.~
+@114  = ~Forcément.~
+@115  = ~Tu veux juste être une simple citoyenne de Féérune. Je peux comprendre cela.~
+@116  = ~Bien qu'évidemment je n'aie aucun moyen de savoir vraiment ce que tu ressens. Tous ces choix à faire, la pression que les autres t'imposent... tout cela.~
+@117  = ~Mais tu sais que tu seras toujours pour moi celle que je connais et que j'aime. Tu sais cela, hein ?~
+@118  = ~(Prendre sa main) Je le sais, et je t'en remercie. En réalité ce n'est pas si terrible, mais parfois cela m'affecte vraiment et dans ces moments-là je voudrais que tout soit comme avant, quand j'étais à Château-Suif. ~
+@119  = ~(Prendre sa main) Je sais, et d'une manière ou d'une autre je m'en sortirai.~
+@120  = ~Je t'aime aussi, mais je ne m'intéresse guère à ce que les autres attendent de moi, ou s'ils ont peur de moi... ou autre chose de ce genre. Je suis heureuse comme ça, tenir le cap et voir ce qui se produit.~
+@121  = ~(Elle vous embrasse sur la joue)~
+@122  = ~Nous nous en sortirons ensemble, <CHARNAME>, comme nous le faisons depuis le début.~
+
+// dialogue romance tob 3
+
+@123  = ~(Vous sentez la présence de Sarah à côté de vous. Elle vous sourit et serre votre bras.)~
+@124  = ~Tout va bien ?~ [K#sar019]
+@125  = ~Oui, et maintenant ça va encore mieux !~
+@126  = ~Oui. Pourquoi me demandes-tu cela ?~
+@127  = ~Cela irait bien si tu arrêtais de me poser des questions inutiles.~
+@128  = ~Tout va bien Sarah, mais je pense que ce serait mieux que tu me laisses seule pour le moment.~
+@129  = ~Je ne suis pas sure que ce soit une bonne idée de rester ensemble, Sarah. Je suis désolée.~
+@130  = ~(Elle hoche la tête, mais son sourire s'efface de son visage.)~
+@131  = ~Bien sûr <CHARNAME>. Souviens-toi juste que si tu as besoin de parler, je suis là.~
+@132  = ~Comment ? Mais... je croyais que...~
+@133  = ~(Soupir) Si c'est ce que tu veux... qu'il en soit ainsi.~
+@134  = ~Pour l'instant, je reste à tes côtés pour t'aider.~
+@135  = ~(Elle rit à gorge déployée)~
+@136  = ~Qu'est-ce que tu es drôle ! C'est de la simple curiosité. Tu es plutôt discrète depuis quelques temps.~
+@137  = ~Mais je dois dire que je ne suis pas non plus très bavarde en ce moment.~
+@138  = ~Enfin bon, je voulais juste m'assurer que tu allais bien. Tu sais à quel point cela me fait de la peine de te voir préoccupée.~
+@139  = ~Tout va bien Sarah. C'est juste qu'il nous arrive beaucoup de choses en ce moment. (L'étreindre)~
+@140  = ~Tout va bien Sarah, et merci de t'inquiéter de mon état. (L'embrasser sur la joue)~
+@141  = ~En ce moment je pense beaucoup à ce que nous avons accompli et à tout ce qui nous attend encore. Mais tout se passera bien.~
+@142  = ~(Elle s'abandonne à votre étreinte et pousse un soupir.)~
+@143  = ~Bien dommage qu'on ne puisse pas y passer la journée.~
+@144  = ~(Elle rougit légèrement et serre votre main.)~
+@145  = ~Je ferais tout pour toi.~
+@146  = ~(Elle hoche la tête solennellement et prend votre main.)~
+
+// dialogue romance tob 4
+
+@147  = ~<CHARNAME>, juste un mot, s'il te plaît.~ [K#sar020]
+@148  = ~Bien sûr, que se passe-t-il ?~
+@149  = ~Oui ?~
+@150  = ~Tout ce que tu voudras, mon amour.~
+@151  = ~Quoi encore ?! Tu ne pourrais pas me ficher la paix ?!~
+@152  = ~Je voulais juste dire que...~
+@153  = ~Je suis désolée d'être si discrète en ce moment, depuis... la mort de ma mère, et tout ça. Mon silence n'était pas dirigé contre toi, en tout cas pas intentionnellement. j'ai juste besoin de temps pour réfléchir à... ce que j'ai fait.~
+@154  = ~Ce que nous avons fait.~
+@155  = ~Tu m'as toujours dit que nous affronterions les épreuves ensemble, que tu serais toujours là pour moi.~
+@156  = ~Et maintenant... j'ai le sentiment d'avoir enduré tant d'épreuves ; que *nous* avons enduré tant d'épreuves. Je crois que j'ai besoin de savoir juste une seule chose, et j'apprécierais vraiment que tu me dises la vérité.~
+@157  = ~M'es-tu dévouée ? Je veux dire, complètement dévouée. Et je t'en prie... sois honnête.~
+@158  = ~Dans mon esprit il n'y a aucun doute : nous sommes faites pour être ensemble, Sarah.~
+@159  = ~Oui, je te suis dévouée.~
+@160  = ~Quelle question ! Bien sûr que je te suis dévouée !~
+@161  = ~J'ai peur de ne pas pouvoir te répondre oui, Sarah. Je suis désolée.~
+@162  = ~J'apprécie ton honnêteté, mon amour.~
+@163  = ~(Elle vous enlace et vous serre brièvement contre elle avant de vous embrasser langoureusement.)~
+@164  = ~C'est... ce que j'avais besoin d'entendre, <CHARNAME>.~
+@165  = ~Merci. Je dois... prendre le temps de réfléchir maintenant.~
+
+// dialogue romance tob 5
+
+@166  = ~C'est étrange... cette impression de savoir ce que le futur vous réserve ; ce qu'il adviendra de votre vie toute entière.~ [K#sar021]
+@167  = ~On a l'impression que tout est planifié, même lorsque le plan est justement... de ne pas avoir de plan.~ [K#sar022]
+@168  = ~Et cependant...~ [K#sar023]
+@169  = ~Après tout cela, j'ai l'impression de ne rien savoir, de ne rien avoir appris.~ [K#sar024]
+@170  = ~Sarah, mais de quoi parles-tu ?~
+@171  = ~Je n'y comprends rien... tu n'as rien appris ?~
+@172  = ~(Elle sourit doucement et prend votre main)~
+@173  = ~Nous avons beaucoup perdu, <CHARNAME>. Gorion, tes amis, mon père... ma mère. C'est injuste, et il est évident que nous avons toutes deux été traumatisées par nos pertes et par ce que nous avons vécu.~
+@174  = ~Mais par certains côtés, ces épreuves nous ont rendues plus fortes. Et nous sommes devenues proches.~
+@175  = ~Je n'étais jamais tombée amoureuse avant, <CHARNAME> ; tu es la première. Et j'espère que...~
+@176  = ~(Il est flagrant qu'elle lutte pour masquer sa nervosité.)~
+@177  = ~J'espère que tu seras la dernière.~
+@178  = ~Qu'as-tu dit, Sarah ?~
+@179  = ~(Ne rien dire)~
+@180  = ~(Elle prend une profonde inspiration et serre vos mains.)~
+@181  = ~Je veux que tu restes avec moi <CHARNAME>.~
+@182  = ~Pour toujours.~
+@183  = ~Je veux aller là où tu iras. Je veux être à tes côtés lorsque tu seras heureuse ou... triste, et même lorsque tu seras en colère ou frustrée... peu importe !~
+@184  = ~C'est... difficile pour moi de te dire tout ça. En fait, si je te disais que t'annoncer tout cela est la chose la plus dure que j'aie jamais eue à faire, ce serait la pure vérité.~
+@185  = ~(Elle fait une pause et attend votre réponse.)~
+@186  = ~Tu es mon seul amour, Sarah. Je t'aime, et je te jure devant les dieux que je serai à toi jusqu'à la fin des temps.~
+@187  = ~Je t'aime Sarah, et je resterai bien sûr avec toi.~
+@188  = ~Je suis désolée Sarah, mais je ne partage pas ce sentiment. Peut-être est-ce mieux comme cela.~
+@189  = ~(Ses yeux s'écarquillent, et elle serre vos mains si fort que vous commencez même à en avoir mal.)~
+@190  = ~Tu... Tu vas rester ? A-avec moi ?~
+@191  = ~Je... je ne sais plus quoi dire. Je ne m'étais pas préparée à cela... Je...~
+@192  = ~Les plans ne fonctionnent jamais, tu ne t'en souviens pas ? (L'enlacer et l'embrasser)~
+@193  = ~Ne t'inquiète pas. Rien ne pourra nous séparer, Sarah. (La serrer dans vos bras)~
+@194  = ~(Elle vous regarde, presque abasourdie, comme si elle était en train de rêver toute cette conversation.)~
+@195  = ~Quoi qu'il puisse se produire, <CHARNAME>, je t'aime.~
+@196  = ~Et c'est pour toujours.~
+
+// dialogue romance tob 6
+
+@197  = ~(Sarah regarde fixement le corps de sa mère décédée. Elle pâlit.)~
+@198  = ~C'est fini, n'est-ce pas ?~ [K#sar025]
+@199  = ~Je... elle...~
+@200  = ~(La serrer dans vos bras) Ta mère a eu un choix difficile à faire, et toi aussi. Je suis désolée que les choses aient dû se passer ainsi.~
+@201  = ~(Elle s'écarte de vous)~
+@202  = ~Je suis désolée, je... j'ai besoin d'être seule quelques temps.~
+
+// dialogue romance tob 7
+
+@203  = ~(Alors que vous terminez de monter le bivouac pour la nuit, vous apercevez Sarah assise à côté du petit feu de camp.)~
+@204  = ~(Elle regarde les flammes d'un air absent.)~
+@205  = ~(L'approcher.)~
+@206  = ~(Vous la laissez tranquille, et la nuit se passe sans incident.)~
+@207  = ~(Elle jette un bref coup d'oeil et vous aperçoit en train de vous approcher. Elle se lève tout de suite.)~
+@208  = ~<CHARNAME>, pouvons-nous parler ?~
+@209  = ~Au sujet de ta mère ?~
+@210  = ~Bien sûr, à quel sujet ?~
+@211  = ~Quelque chose ne va pas ?~
+@212  = ~(Elle se met brusquement en colère et vous repousse.)~
+@213  = ~Arrête *tout de suite* ! Arrête de te comporter comme ça !~
+@214  = ~De me comporter comment ?!~
+@215  = ~Quoi ?!~
+@216  = ~Mais qu'est-ce qui t'arrive, Sarah ?!~
+@217  = ~(Elle lève les bras au ciel, frustrée.)~
+@218  = ~Exactement comme ça ! Tu agis toujours comme cela... c'est comme si tu avais besoin d'être gentille avec moi en permanence, même si je me comporte avec toi comme la pire personne au monde.~
+@219  = ~(Elle vous frappe à l'épaule de toutes ses forces.)~
+@220  = ~Aïe ! Pourquoi ?!~
+@221  = ~Quelle mouche t'a piquée ? Tu es cinglée ?~
+@222  = ~(Elle recule d'un pas et son air furieux est vite remplacé par une expression d'horreur et de culpabilité.)~
+@223  = ~Je... je suis désolée... tu vas bien ?~
+@224  = ~(Elle touche doucement votre épaule.)~
+@225  = ~(Prendre ses mains) Tout va bien Sarah, mais que t'arrive-t-il ?~
+@226  = ~Vas-tu me dire ce qui t'a pris ?~
+@227  = ~Oui... Je suis désolée <CHARNAME>, vraiment. Je présume que j'ai juste des difficultés à... faire face aux évènements récents.~
+@228  = ~(Elle se penche vers vous et ses lèvres frôlent brièvement les vôtres, puis elle baisse la tête. Quelques larmes coulent, mais elle essuie prestement ses yeux.)~
+@229  = ~Je déteste tout ça. Je déteste tout ce qui est en train de nous arriver. A toi et à moi. Ce n'est pas juste.~
+@230  = ~Mais il faut croire que... personne n'a jamais dit que la vie était juste. C'est bien ce qu'on nous raconte toujours ?~
+@231  = ~(Elle vous enlace et tire légèrement vos vêtements.)~
+@232  = ~Oublions tout le reste ce soir, <CHARNAME>. Juste nous deux et personne d'autre.~
+@233  = ~(Elle défait lentement toutes les fermetures de vos vêtements et en même temps se penche pour vous embrasser.)~
+@234  = ~Oublions Bhaal et ma mère, que la nuit nous appartienne ! Tu... es d'accord ?~
+@235  = ~Oui Sarah. J'en meurs d'envie.~
+@236  = ~Tout ce que tu voudras, Sarah.~
+@237  = ~Peut-être devrions-nous simplement nous reposer maintenant, Sarah. Tu aurais bien besoin de souffler un peu, avec tous ces évènements.~
+@238  = ~(Elle vous adresse un large sourire et vous embrasse avec passion.)~
+@239  = ~Bien. C'est... ce que je veux.~
+@240  = ~(Elle vous serre très fort.)~
+@241  = ~D'accord <CHARNAME>, si tu penses que c'est le mieux. Je suis juste heureuse d'être ici avec toi. Cela me suffit pour être bien.~
+@242  = ~(Elle vous embrasse délicatement sur la joue.)~
+@243  = ~Bien... bonne nuit.~
+@244  = ~Tout se passera bien, j'en suis certaine.~

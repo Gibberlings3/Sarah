@@ -1,0 +1,28 @@
+// THANK YOU NYTHRUN! ALL SHALL LOVE YOU AND DESPAIR!!!!
+
+IF
+  Contains("k#srhbdy",Myself)                  // Sarah's Body
+  Global("CleanseVampire","ar1401",0)
+THEN
+  RESPONSE #100
+    SetGlobal("CleanseVampire","ar1401",1)     // doesn't really matter
+END
+
+
+IF
+  Contains("k#srhbdy",Myself)                  // Sarah's Body
+  Contains("miscbp",Myself)                    // Bodhi's Black Heart
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("CleanseVampire","ar1401",2)     // Deactivates the "Vampiric Omnibus told you noobs all about this" info point
+    DestroyItem("k#srhbdy")                    // Sarah's Body
+    DestroyItem("miscbp")                      // Bodhi's Black Heart
+    CreateVisualEffect("spmetsw2",[2592.1701]) // DRAMATIC EFFECTS
+    CreateVisualEffect("spmetsw2",[2645.1742]) // MORE DRAMA
+    Wait(1)
+    CreateVisualEffect("spfleshs",[2565.1677]) // DRAMA-MINE?
+    Wait(1)
+    MoveGlobal("ar1401","k#sarah",[2565.1677]) // Since she's been a party member, she's automatically a Global object and can be referenced by script name.
+    SetInterrupt(TRUE)
+END

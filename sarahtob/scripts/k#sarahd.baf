@@ -1,0 +1,48 @@
+// Sarah's Dream File
+
+// Used for LTs that occur right before rest
+
+// Steamy
+
+IF
+GlobalGT("K#SarahTalkRomance","GLOBAL",12)
+GlobalLT("K#SarahTalkRomance","GLOBAL",18)
+Global("K#SarahRomanceActive","GLOBAL",2)
+Global("K#SarahSteamyLovetalk","GLOBAL",0)
+TimeOfDay(NIGHT)
+AreaType(FOREST)
+InParty(Myself)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+IncrementGlobal("K#SarahSteamyLovetalk","GLOBAL",1)
+PlaySong(0)
+PlaySound("K#SaraM2")
+Interact(Player1)
+END
+
+// Post-quest
+
+IF
+GlobalGT("K#SarahTalkRomance","GLOBAL",18)
+Global("K#SarahRomanceActive","GLOBAL",2)
+Global("K#SarahQuestComplete","GLOBAL",1) // quest complete
+Global("K#SarahNoSex","GLOBAL",0)         /* yes, it should be here, not in dialogue file */
+Global("K#SarahSexLovetalk","GLOBAL",0)
+TimeOfDay(NIGHT)
+AreaType(FOREST)
+InParty(Myself)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+IncrementGlobal("K#SarahSexLovetalk","GLOBAL",1)
+PlaySong(0)
+PlaySound("K#SaraM2")
+Interact(Player1)
+END
+
+

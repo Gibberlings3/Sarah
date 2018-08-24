@@ -1,0 +1,456 @@
+// This is Sarah's script file. All of her talk timers are in here, as well as any quest scripts, romance conflict scripts, etc.
+
+// Sets the timer to start after Sarah joins so that she doesnt start talking right after joining the party
+
+
+
+
+/* Three pre-friendship talks */
+
+
+
+IF
+Global("K#SarahJoined", "LOCALS", 1)
+Global("K#SarahPreTalk","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("K#SarahPreTalk","GLOBAL",1)
+RealSetGlobalTimer("K#SarahTimerPre","GLOBAL",5)
+END
+
+IF
+RealGlobalTimerExpired("K#SarahTimerPre","GLOBAL")
+InParty("K#Sarah")
+See(Player1)
+!ActuallyInCombat()
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+OR(3)
+Global("K#SarahPreTalk","GLOBAL", 1)
+Global("K#SarahPreTalk","GLOBAL", 3)
+Global("K#SarahPreTalk","GLOBAL", 5)
+THEN
+RESPONSE #100
+IncrementGlobal("K#SarahPreTalk","GLOBAL", 1)
+END
+
+IF 
+RealGlobalTimerExpired("K#SarahTimerPre","GLOBAL")
+InParty("K#Sarah")
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+OR(3)
+Global("K#SarahPreTalk","GLOBAL", 2)
+Global("K#SarahPreTalk","GLOBAL", 4)
+Global("K#SarahPreTalk","GLOBAL", 6)
+THEN
+RESPONSE #100
+Interact(Player1)
+END
+
+
+
+/* Seven friendship talks */
+
+
+
+IF
+RealGlobalTimerExpired("K#SarahTimerFriend","GLOBAL")
+Global("K#SarahFriendshipActive","GLOBAL",1) // only if friendship is active
+InParty("K#Sarah")
+See(Player1)
+!ActuallyInCombat()
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+OR(4)
+Global("K#SarahTalkFriend","GLOBAL", 1)
+Global("K#SarahTalkFriend","GLOBAL", 3)
+Global("K#SarahTalkFriend","GLOBAL", 5)
+Global("K#SarahTalkFriend","GLOBAL", 13)
+THEN
+RESPONSE #100
+IncrementGlobal("K#SarahTalkFriend","GLOBAL", 1)
+END
+
+IF
+RealGlobalTimerExpired("K#SarahTimerFriend","GLOBAL")
+Global("K#SarahFriendshipActive","GLOBAL",1) // only if friendship is active
+InParty("K#Sarah")
+See(Player1)
+!ActuallyInCombat()
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+AreaType(FOREST)                             // FRIENDTALK 4 HAPPENS IN A FOREST!
+Global("K#SarahTalkFriend","GLOBAL", 7)
+THEN
+RESPONSE #100
+IncrementGlobal("K#SarahTalkFriend","GLOBAL", 1)
+END
+
+IF
+RealGlobalTimerExpired("K#SarahTimerFriend","GLOBAL")
+Global("K#SarahFriendshipActive","GLOBAL",1) // only if friendship is active
+InParty("K#Sarah")
+See(Player1)
+!ActuallyInCombat()
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+Global("AsylumPlot", "GLOBAL", 55)            // FRIENDTALK 5 HAPPENS AFTER ASYLUM!
+Global("K#SarahTalkFriend","GLOBAL", 9)
+THEN
+RESPONSE #100
+IncrementGlobal("K#SarahTalkFriend","GLOBAL", 1)
+END
+
+IF
+RealGlobalTimerExpired("K#SarahTimerFriend","GLOBAL")
+Global("K#SarahFriendshipActive","GLOBAL",1) // only if friendship is active
+InParty("K#Sarah")
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+See(Player1)
+!ActuallyInCombat()
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+GlobalGT("Chapter","GLOBAL",5)               // FRIENDTALK 6 HAPPENS AFTER UNDERDARK!
+Global("K#SarahTalkFriend","GLOBAL", 11)
+THEN
+RESPONSE #100
+IncrementGlobal("K#SarahTalkFriend","GLOBAL", 1)
+END
+
+IF
+RealGlobalTimerExpired("K#SarahTimerFriend","GLOBAL")
+Global("K#SarahFriendshipActive","GLOBAL",1) // only if friendship is active
+InParty("K#Sarah")
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+OR(7)
+Global("K#SarahTalkFriend","GLOBAL", 2)
+Global("K#SarahTalkFriend","GLOBAL", 4)
+Global("K#SarahTalkFriend","GLOBAL", 6)
+Global("K#SarahTalkFriend","GLOBAL", 8)
+Global("K#SarahTalkFriend","GLOBAL", 10)
+Global("K#SarahTalkFriend","GLOBAL", 12)
+Global("K#SarahTalkFriend","GLOBAL", 14)
+THEN
+RESPONSE #100
+PlaySong(0)
+PlaySound("K#SaraM3")
+Interact(Player1)
+END
+
+
+
+/* romance talks */
+
+
+
+/* talks 1-3*/
+
+IF
+RealGlobalTimerExpired("K#SarahTimerRomance","GLOBAL")
+InParty("K#Sarah")
+See(Player1)
+!ActuallyInCombat()
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+Global("K#SarahRomanceActive","GLOBAL",1) // all romance talks only happen, if the romance is active
+OR(3)
+Global("K#SarahTalkRomance","GLOBAL", 1)
+Global("K#SarahTalkRomance","GLOBAL", 3)
+Global("K#SarahTalkRomance","GLOBAL", 5)
+THEN
+RESPONSE #100
+IncrementGlobal("K#SarahTalkRomance","GLOBAL", 1)
+END
+
+IF
+RealGlobalTimerExpired("K#SarahTimerRomance","GLOBAL")
+InParty("K#Sarah")
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+Global("K#SarahRomanceActive","GLOBAL",1)
+OR(3)
+Global("K#SarahTalkRomance","GLOBAL", 2)
+Global("K#SarahTalkRomance","GLOBAL", 4)
+Global("K#SarahTalkRomance","GLOBAL", 6)
+THEN
+RESPONSE #100
+PlaySong(0)
+PlaySound("K#SaraM1")
+Interact(Player1)
+END
+
+/* talks 4-9 */
+
+IF
+RealGlobalTimerExpired("K#SarahTimerRomance","GLOBAL")
+InParty("K#Sarah")
+See(Player1)
+!ActuallyInCombat()
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+Global("K#SarahRomanceActive","GLOBAL",2)
+AreaType(FOREST)                             // LOVETALK 4 HAPPENS IN A FOREST!
+Global("K#SarahTalkRomance","GLOBAL", 7)
+THEN
+RESPONSE #100
+IncrementGlobal("K#SarahTalkRomance","GLOBAL", 1)
+END
+
+IF
+RealGlobalTimerExpired("K#SarahTimerRomance","GLOBAL")
+InParty("K#Sarah")
+See(Player1)
+!ActuallyInCombat()
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+Global("K#SarahRomanceActive","GLOBAL",2)
+OR(5)
+Global("K#SarahTalkRomance","GLOBAL", 9)
+Global("K#SarahTalkRomance","GLOBAL", 11)
+Global("K#SarahTalkRomance","GLOBAL", 13)
+Global("K#SarahTalkRomance","GLOBAL", 15)
+Global("K#SarahTalkRomance","GLOBAL", 17)
+THEN
+RESPONSE #100
+IncrementGlobal("K#SarahTalkRomance","GLOBAL", 1)
+END
+
+IF
+RealGlobalTimerExpired("K#SarahTimerRomance","GLOBAL")
+InParty("K#Sarah")
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+Global("K#SarahRomanceActive","GLOBAL",2)
+OR(6)
+Global("K#SarahTalkRomance","GLOBAL", 8)
+Global("K#SarahTalkRomance","GLOBAL", 10)
+Global("K#SarahTalkRomance","GLOBAL", 12)
+Global("K#SarahTalkRomance","GLOBAL", 14)
+Global("K#SarahTalkRomance","GLOBAL", 16)
+Global("K#SarahTalkRomance","GLOBAL", 18)
+THEN
+RESPONSE #100
+PlaySong(0)
+PlaySound("K#SaraM1")
+Interact(Player1)
+END
+
+
+
+// post-quest morning-after lovetalk
+
+IF
+PartyRested()
+Global("K#SarahQuestComplete","GLOBAL",1)
+Global("K#SarahSexLovetalk","GLOBAL",2)
+Global("K#SarahSleepTalk","GLOBAL",0)
+Global("K#SarahRomanceActive","GLOBAL",2)
+InParty("K#Sarah")
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("K#SarahSexLovetalk","GLOBAL",3)
+END
+
+IF
+Global("K#SarahSexLovetalk","GLOBAL",3)
+Global("K#SarahSleepTalk","GLOBAL",0)
+Global("K#SarahRomanceActive","GLOBAL",2)
+InParty("K#Sarah")
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+PlaySong(0)
+PlaySound("K#SaraM1")
+Interact(Player1)
+END
+
+
+
+// post-quest post-morning after: talk about the ring
+
+IF
+RealGlobalTimerExpired("K#SarahRingTimer","GLOBAL")
+OR(2) /* from the dialogue */
+ Global("K#SarahSleepTalk","GLOBAL",1)
+ Global("K#SarahNoSex","GLOBAL",1)
+InParty("K#Sarah")
+See(Player1)
+!ActuallyInCombat()
+Global("K#SarahSexLovetalk","GLOBAL",4)
+Global("K#SarahRomanceActive","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("K#SarahSexLovetalk","GLOBAL",5)
+END
+
+IF
+RealGlobalTimerExpired("K#SarahRingTimer","GLOBAL")
+InParty("K#Sarah")
+See(Player1)
+Global("K#SarahSexLovetalk","GLOBAL",5)
+Global("K#SarahRomanceActive","GLOBAL",2)
+THEN
+RESPONSE #100
+PlaySong(0)
+PlaySound("K#SaraM1")
+Interact(Player1)
+END
+
+
+
+// Anomen Conflict
+
+
+
+IF
+Global("K#SarahRomanceActive","GLOBAL",2)
+Global("AnomenRomanceActive","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("AnomenRomanceActive","GLOBAL",3)
+END
+
+IF
+Global("AnomenRomanceActive","GLOBAL",2)
+Global("K#SarahRomanceActive","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("K#SarahRomanceActive","GLOBAL",3)
+END
+
+
+// Vampire Talk
+
+IF
+InParty(Myself)
+InParty(Player1)
+See("VAMPIRE")
+Global("K#SarahSawVamp","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("K#SarahSawVamp","GLOBAL",1)
+Dialogue(Player1)
+END
+
+
+// Quest
+
+IF
+InParty(Myself)
+GlobalGT("K#SarahTalkRomance","GLOBAL",18)
+Global("K#GURIENExists","GLOBAL",0)
+!Global("Chapter","GLOBAL",4)
+!Global("Chapter","GLOBAL",5)
+!Global("Chapter","GLOBAL",7)
+AreaType(CITY)
+!Exists("K#GURIEN")
+THEN
+RESPONSE #100
+SetGlobal("K#GURIENExists","GLOBAL",1)
+SetGlobal("K#SarahQuestComplete","GLOBAL",0)
+SetGlobal("K#SarahQuest","GLOBAL",0)
+CreateCreatureObjectOffScreen("K#GURIEN",Myself,0,0,0)
+END
+
+// After Gurien's talk
+
+IF
+InParty("K#Sarah")
+InParty(Player1)
+!ActuallyInCombat()
+Global("K#SarahQuest","GLOBAL",1)
+THEN
+RESPONSE #100
+Dialogue(Player1)
+SetGlobal("K#SarahQuestWait","GLOBAL",0)
+SetGlobal("K#SarahQuestTalk","GLOBAL",0)
+END
+
+// Anna Spawn
+
+IF
+Global("K#SarahQuest","GLOBAL",2)
+Global("K#AnnaSpawn","GLOBAL",0)
+AreaCheck("AR1000")
+THEN
+RESPONSE #100
+CreateCreature("K#ANNA",[2256.1354],7)
+SetGlobal("K#AnnaSpawn","GLOBAL",1)
+END
+
+// After Quest Complete
+
+IF
+InParty("K#Sarah")
+InParty(Player1)
+!ActuallyInCombat()
+Global("K#SarahQuest","GLOBAL",4)
+THEN
+RESPONSE #100
+Dialogue(Player1)
+END
+
+
+
+// Reputation
+
+IF ReputationLT(Player1,3)
+Global("K#RepSarah","LOCALS",0)
+THEN
+RESPONSE #100
+StartDialogNoSet(Player1)
+END
+
+// Sarah Dies
+
+IF
+Dead("K#Sarah")
+Global("K#SarahDead","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("K#SarahDead","GLOBAL",1)
+END
+
+IF
+Global("K#SarahDead","GLOBAL",1)
+THEN
+RESPONSE #100
+Dialogue(Player1)
+END
+
+// Waiting too long to help Gurien
+
+
+IF
+!GlobalTimerNotExpired("K#SarahQuestWait","GLOBAL")
+InParty(Player1)
+InParty("K#Sarah")
+!Global("Chapter","GLOBAL",4)
+!Global("Chapter","GLOBAL",5)
+!Global("Chapter","GLOBAL",7)
+!ActuallyInCombat()
+Global("K#SarahQuest","GLOBAL",2)
+!Global("K#SarahQuestWait","GLOBAL",2)
+THEN
+RESPONSE #100
+Interact(Player1)
+END
+
+
+
+
+
+
+

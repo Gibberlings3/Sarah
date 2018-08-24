@@ -1,0 +1,47 @@
+@0    = ~Vous me suivez dans l'espoir de récupérer quelque chose qui vous tient à coeur. Je dis que plus vous persévérerez, plus vous perdrez.~
+@1    = ~Pensez à la jeune Sarah. Ne serait-il pas affreux que quelque chose arrive à l'une d'entre vous ?~
+@2    = ~Nous n'avons pas peur de toi, démon !~
+@3    = ~Mais je me demande... a-t-elle peur de vous perdre ? Attention <CHARNAME>. Continuez à me suivre et vous perdrez plus que vous ne pourriez l'imaginer ! Et cela commence maintenant !~
+@4    = ~Le combat final contre Bodhi.
+
+Bodhi est apparue dans une embuscade peu avant que j'atteigne son antre, me prévenant qu'elle savait ce que je faisais et qu'elle me volait la personne la plus chère à mon coeur : Sarah. Avant de disparaître et de lâcher ses autres morts-vivants à mes trousses, Bodhi m'a dit que si je continuais, je pourrais perdre beaucoup plus que je ne croyais. Je ne peux pas abandonner le Rhynn Lanthorn... mais désormais, la vie et l'âme immortelle de celle que j'aime sont aussi en jeu !~
+@5    = ~Mais... non, je me suis déjà bien préparée pour cette rencontre, <CHARNAME>. Je vous ai avertie que vous perdriez beaucoup si vous persistiez à vous approcher de moi. Je n'ai pas menti.~
+@6    = ~Vous m'avez déjà pris beaucoup trop ; Vous allez me rendre les âmes d'Imoen et de Sarah !~
+@7    = ~Et tu as tenu parole. Rends-moi Sarah et peut-être que j'aurai pitié.~
+@8    = ~Je t'aurais pourchassée rien que pour Sarah. Elle compte beaucoup pour moi.~
+@9    = ~Tu accordes trop d'importance aux sentiments. L'enlèvement de Sarah ne te sauvera pas.~
+@10   = ~Vous l'avez définitivement perdue, <CHARNAME>. Sarah a été plutôt réceptive à mes ordres. Je doute que vos efforts maladroits puissent inspirer cette loyauté qu'une morsure et un regard m'ont suffi pour obtenir.~
+@11   = ~Le combat final contre Bodhi.
+
+Bodhi a fait de Sarah une vampire ! Ou presque... La transformation n'a peut-être pas eu le temps de s'opérer complètement pendant le bref laps de temps où Sarah est restée entre les mains de Bodhi. Espérons qu'elle peut être soignée ou elle me sera à jamais perdue. Le conseiller de guerre elfe connaît peut-être un remède... ou Elhan...~
+@12   = ~Un stratagème intéressant, mais je suis sûre que son destin servira d'exemple, que vous souhaitiez son retour ou non.~
+@13   = ~Tout ce que vous voudrez, maîtresse.~
+@14   = ~Ne voyez-vous donc pas, <CHARNAME> ? La transformation n'est même pas encore complète et elle vous a déjà trahie. Préparez-vous à mourir de la main de votre bien-aimée !~
+@15   = ~Elhan ! A cause de vous, voici le corps à demi vampirisé de Sarah ! Je vous somme de vous expliquer !~
+@16   = ~Une de mes amies est atteinte de vampirisme. D'anciens textes disent que les disciples d'Oghma pourraient détenir un remède.~
+@17   = ~Je cherche des informations sur un livre indiquant comment soigner le vampirisme.~
+@18   = ~Venez-vous quérir la sagesse du Gardien du Savoir ? Le Dieu de la Sagesse attend.~
+@19   = ~Non merci, je n'ai pas besoin d'aide pour le moment.~
+@20   = ~J'ai perdu quelqu'un qui m'est cher au cours d'une bataille avec Bodhi, sa soeur. Je cherche un moyen de la guérir.~
+@21   = ~Un être très cher a été emporté par un vampire. A quoi dois-je m'attendre lorsque je la trouverai ?~
+@22   = ~Un être cher a été emporté par un vampire. Y a-t-il un moyen de la sauver ?~
+@23   = ~Je... quoi ?~ [K#Sara1D]
+@24   = ~(elle lève les yeux et vous regarde.)~
+@25   = ~<CHARNAME> ?~
+@26   = ~Je... j'étais devenue vampire, <CHARNAME>. J'étais l'une d'entre eux. Et... j'ai essayé de te tuer ! Je suis tellement désolée <CHARNAME>, je te jure que je ne contrôlais pas mes actes ! Je t'en prie, il faut me croire !~ [K#Sara2D]
+@27   = ~Tout va bien Sarah. C'est fini maintenant.~
+@28   = ~Le combat final contre Bodhi.
+
+Même si j'ai cru pendant un certain temps que la vengeance finale de Bodhi serait de retenir à jamais Sarah, il semblerait que le recueil de légendes ait eu raison... non seulement l'idole d'Amaunator a ramené Sarah à la vie, mais elle l'a aussi débarrassée du vampirisme.~
+@29   = ~Tout va bien, mon amour. Elle ne peut plus te faire de mal. Oh dieux, j'étais si inquiète...~
+@30   = ~Aucune importance. J'ai pris à Bodhi ce que j'étais venue chercher, et maintenant elle est hors d'état de nuire.~
+@31   = ~C'est... fini ? Très bien. Nous devons nous mettre en route.~ [K#Sara3D]
+@32   = ~Oui. S'il te plaît, rejoins-moi.~
+@33   = ~Je suis désolée, mais je n'ai pas de place pour toi dans le groupe actuellement.~
+@34   = ~Aucune importance ? <CHARNAME>, j'étais devenue *vampire*. Une créature que je déteste plus que n'importe quelle autre. Cela n'a donc aucune importance ?~ [K#Sara4D]
+@35   = ~Je suis désolée Sarah, je me suis mal exprimée, c'est juste que la journée a été longue et... enfin, c'est fini maintenant.~
+@36   = ~Pas vraiment. J'ai tué Bodhi juste pour récupérer le Rhynn Lanthorn.~
+@37   = ~Comment !? D'accord... après tout ce que j'ai subi, tu me traites avec un tel mépris ?!~ [K#Sara5D]
+@38   = ~Au revoir, <CHARNAME>.~
+@39   = ~(Elle saisit votre bras pour vous serrer contre elle, et vous embrasse.)~
+@40   = ~Merci.~ [K#Sara6D]

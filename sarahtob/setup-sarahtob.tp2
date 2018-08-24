@@ -1,0 +1,360 @@
+BACKUP ~SarahToB/backup~
+AUTHOR ~theacefes (theacefes@gibberlings3.net)~
+
+VERSION ~4~
+README ~SarahToB/readme-sarahtob.html~
+
+//MODDER
+
+// Translations
+AUTO_TRA ~sarahtob/translations/%s~
+
+// Code borrowed from Edwin Romance V206, using the new HANDLE_CHARSETS function
+ALWAYS
+  INCLUDE ~%MOD_FOLDER%/handle_charsets.tpa~
+  ACTION_DEFINE_ARRAY fl#noconvert BEGIN END
+  ACTION_DEFINE_ARRAY fl#reload BEGIN setup END
+  LAF HANDLE_CHARSETS
+    INT_VAR
+      infer_charset = 1
+    STR_VAR
+      tra_path = EVAL ~%MOD_FOLDER%/translations~
+      // charset_table = fl#charsets // Included for illustrative purposes.
+      noconvert_array = fl#noconvert
+      reload_array = fl#reload
+  END
+END
+
+
+LANGUAGE ~English~
+         ~english~
+         ~sarahtob/translations/english/setup.tra~
+LANGUAGE ~French (by Le Marquis from Les d'Oghmatiques)~
+         ~french~
+         ~sarahtob/translations/french/setup.tra~
+
+BEGIN @0
+
+
+// adds ToB actions/triggers to SoA
+
+// adding all ToB actions to action.ids unless already present
+APPEND ~ACTION.IDS~ ~31 SpellRES(S:RES*,O:Target*)~
+             UNLESS ~31 SpellRES(S:RES\*,O:Target\*)~
+APPEND ~ACTION.IDS~ ~95 SpellPointRES(S:RES*,P:Target*)~
+             UNLESS ~95 SpellPointRES(S:RES\*,P:Target\*)~
+APPEND ~ACTION.IDS~ ~113 ForceSpellRES(S:RES*,O:Target)~
+             UNLESS ~113 ForceSpellRES(S:RES\*,O:Target)~
+APPEND ~ACTION.IDS~ ~114 ForceSpellPointRES(S:RES*,P:Target)~
+             UNLESS ~114 ForceSpellPointRES(S:RES\*,P:Target)~
+APPEND ~ACTION.IDS~ ~147 RemoveSpellRES(S:Spell*)~
+             UNLESS ~147 RemoveSpellRES(S:Spell\*)~
+APPEND ~ACTION.IDS~ ~160 ApplySpellRES(S:RES*,O:Target)~
+             UNLESS ~160 ApplySpellRES(S:RES\*,O:Target)~
+APPEND ~ACTION.IDS~ ~181 ReallyForceSpellRES(S:RES*,O:Target)~
+             UNLESS ~181 ReallyForceSpellRES(S:RES\*,O:Target)~
+APPEND ~ACTION.IDS~ ~191 SpellNoDecRES(S:RES*,O:Target*)~
+             UNLESS ~191 SpellNoDecRES(S:RES\*,O:Target\*)~
+APPEND ~ACTION.IDS~ ~192 SpellPointNoDecRES(S:RES*,P:Target*)~
+             UNLESS ~192 SpellPointNoDecRES(S:RES\*,P:Target\*)~
+APPEND ~ACTION.IDS~ ~240 ReallyForceSpellDeadRES(S:RES*,O:Target)~
+             UNLESS ~240 ReallyForceSpellDeadRES(S:RES\*,O:Target)~
+APPEND ~ACTION.IDS~ ~318 ForceSpellRangeRES(S:RES*,O:Target)~
+             UNLESS ~318 ForceSpellRangeRES(S:RES\*,O:Target)~
+APPEND ~ACTION.IDS~ ~319 ForceSpellPointRangeRES(S:RES*,P:Target)~
+             UNLESS ~319 ForceSpellPointRangeRES(S:RES\*,P:Target)~
+APPEND ~ACTION.IDS~ ~337 ReallyForceSpellPointRES(S:RES*,P:Target*)~
+             UNLESS ~337 ReallyForceSpellPointRES(S:RES\*,P:Target\*)~
+COPY_EXISTING ~action.ids~ ~override~
+  REPLACE_TEXTUALLY ~^106 Shout(.*$~ ~106 Shout(I:ID*SHOUTIDS)~
+  BUT_ONLY_IF_IT_CHANGES
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~shoutids.ids~ THEN BEGIN
+  COPY ~SarahToB/shoutids.ids~ ~override~
+END
+
+// additional ToB triggers for SoA
+APPEND ~TRIGGER.IDS~ ~0x00A1 SpellCastOnMeRES(S:Spell*,O:Caster*)~
+              UNLESS ~0x00A1 SpellCastOnMeRES(S:Spell\*,O:Caster\*)~
+APPEND ~TRIGGER.IDS~ ~0x0091 SpellCastRES(S:Spell*,O:Object*)~
+              UNLESS ~0x0091 SpellCastRES(S:Spell\*,O:Object\*)~
+APPEND ~TRIGGER.IDS~ ~0x00A6 SpellCastPriestRES(S:Spell*,O:Object*)~
+              UNLESS ~0x00A6 SpellCastPriestRES(S:Spell\*,O:Object\*)~
+APPEND ~TRIGGER.IDS~ ~0x00A7 SpellCastInnateRES(S:Spell*,O:Object*)~
+              UNLESS ~0x00A7 SpellCastInnateRES(S:Spell\*,O:Object\*)~
+APPEND ~TRIGGER.IDS~ ~0x4031 HaveSpellRES(S:Spell*)~
+              UNLESS ~0x4031 HaveSpellRES(S:Spell\*)~
+APPEND ~TRIGGER.IDS~ ~0x40D5 ActuallyInCombat()~
+              UNLESS ~0x40D5 ActuallyInCombat()~
+COPY_EXISTING ~trigger.ids~ ~override~
+  REPLACE_TEXTUALLY ~\bHeard(O:Object\*,I:ID\*)~
+                    ~Heard(O:Object*,I:ID*SHOUTIDS)~
+  BUT_ONLY_IF_IT_CHANGES
+
+// Adds that STATE stuff...not North Dakota though...
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+// force WeiDU to reload altered IDS files
+CLEAR_IDS_MAP
+
+
+
+//Adding CRE files
+
+COPY ~SarahToB/CREs/k#SARAH.cre~ ~override/k#SARAH.cre~
+SAY NAME1 @1
+SAY NAME2 @1
+SAY MORALE @2
+SAY HAPPY @3
+SAY UNHAPPY_ANNOYED @4
+SAY UNHAPPY_SERIOUS @5
+SAY LEADER @6
+SAY TIRED @7
+SAY BORED @8
+SAY BATTLE_CRY1 @9
+SAY BATTLE_CRY2 @10
+SAY BATTLE_CRY3 @11
+SAY BATTLE_CRY4 @12
+SAY DAMAGE @13
+SAY DYING @14
+SAY HURT @15
+SAY AREA_FOREST @16
+SAY AREA_CITY @17
+SAY AREA_DUNGEON @18
+SAY AREA_DAY @19
+SAY AREA_NIGHT @20
+SAY SELECT_COMMON1 @21
+SAY SELECT_COMMON2 @22
+SAY SELECT_COMMON3 @23
+SAY SELECT_COMMON4 @24
+SAY SELECT_COMMON5 @25
+SAY SELECT_COMMON6 @26
+SAY SELECT_ACTION1 @27
+SAY SELECT_ACTION2 @28
+SAY SELECT_ACTION3 @29
+SAY SELECT_ACTION4 @30
+SAY SELECT_ACTION5 @31
+SAY SELECT_ACTION6 @32
+SAY SELECT_ACTION7 @33
+SAY SELECT_RARE1 @34
+SAY SELECT_RARE2 @35
+SAY CRITICAL_HIT @36
+SAY CRITICAL_MISS @37
+SAY TARGET_IMMUNE @38
+SAY INVENTORY_FULL @39
+SAY BIO @40
+
+COPY ~SarahToB/CREs/k#GURIEN.cre~ ~override/k#GURIEN.cre~
+SAY NAME1 @41
+SAY NAME2 @41
+SAY SELECT_COMMON1 @42
+SAY SELECT_COMMON2 @43
+SAY SELECT_COMMON3 ~ ~
+
+COPY ~SarahToB/CREs/k#ANNA.cre~ ~override/k#ANNA.cre~
+SAY NAME1 @45
+SAY NAME2 @45
+SAY SELECT_COMMON1 @46
+SAY SELECT_COMMON2 @47
+SAY SELECT_COMMON3 ~ ~
+
+// Adds Dialogue Files
+
+COMPILE ~SarahToB/Dialogues/K#Sarah.d~
+COMPILE ~SarahToB/Dialogues/K#SarahB.d~
+COMPILE ~SarahToB/Dialogues/K#VMPSRH.d~
+COMPILE ~SarahToB/Dialogues/K#SarahJ.d~
+COMPILE ~SarahToB/Dialogues/K#Gurie.d~
+COMPILE ~SarahToB/Dialogues/K#Anna.d~
+
+ACTION_IF FILE_EXISTS_IN_GAME ~K#AurenB.dlg~
+THEN BEGIN
+COMPILE ~SarahToB/Dialogues/SarahAurenB.d~
+END
+
+// Adds Scripts
+COMPILE ~SarahToB/Scripts/K#VMPSRH.baf~
+COMPILE ~SarahToB/Scripts/K#SarahD.baf~
+COMPILE ~SarahToB/Scripts/K#Sarah.baf~
+COMPILE ~SarahToB/Scripts/K#Anna.baf~
+COMPILE ~SarahToB/Scripts/K#Gurie.baf~
+EXTEND_BOTTOM ~AR1100.bcs~ ~SarahToB/Scripts/AR1100.baf~
+
+ADD_JOURNAL EXISTING TITLE (#74337) @4 @11 @28 USING ~sarahtob/translations/%LANGUAGE%/k#vmpsrh.tra~
+
+
+// Vamp Thing
+COPY ~SarahToB/CREs/K#VMPSRH.cre~ ~override/K#VMPSRH.cre~
+  SAY NAME1 @1
+  SAY NAME2 @1
+ADD_CRE_ITEM ~VAMPREG~ #0 #0 #0 ~IDENTIFIED~ ~LRING~
+ADD_CRE_ITEM ~K#SRHBDY~ #0 #0 #0 ~IDENTIFIED~ ~QITEM1~
+EXTEND_TOP ~CLEANSE.bcs~ ~SarahToB/Scripts/CLEANSE.baf~
+EXTEND_TOP ~VAMPAMB.bcs~ ~SarahToB/Scripts/VAMPAMB.baf~
+EXTEND_TOP ~BODHIAMB.bcs~ ~SarahToB/Scripts/BODHIAMB.baf~
+COMPILE ~SarahToB/Scripts/K#VMPSRH.baf~
+COMPILE ~SarahToB/Scripts/K#SCUT01.baf~
+EXTEND_BOTTOM ~AR0809.bcs~ ~SarahToB/Scripts/AR0809.baf~
+APPEND
+~STATE.IDS~
+~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+// Adds Items
+COPY ~SarahToB/Items/k#cure.itm~ ~override~
+ SAY NAME1 @48
+ SAY NAME2 @49
+ SAY UNIDENTIFIED_DESC @50
+ SAY DESC @51
+COPY ~SarahToB/Items/K#SRHBDY.itm~ ~override~
+ SAY NAME1 @52
+ SAY NAME2 @52
+ SAY UNIDENTIFIED_DESC @50
+ SAY DESC @53
+
+//ToB Stuff
+
+ACTION_IF FILE_EXISTS_IN_GAME ~mel01.cre~ THEN BEGIN
+
+//Adding CRE files
+
+COPY ~SarahToB/CREs/K#SARAH1.cre~ ~override/K#SARAH1.cre~
+SAY NAME1 @1
+SAY NAME2 @1
+SAY MORALE @2
+SAY HAPPY @3
+SAY UNHAPPY_ANNOYED @4
+SAY UNHAPPY_SERIOUS @5
+SAY LEADER @6
+SAY TIRED @7
+SAY BORED @8
+SAY BATTLE_CRY1 @9
+SAY BATTLE_CRY2 @10
+SAY BATTLE_CRY3 @11
+SAY BATTLE_CRY4 @12
+SAY DAMAGE @13
+SAY DYING @14
+SAY HURT @15
+SAY AREA_FOREST @16
+SAY AREA_CITY @17
+SAY AREA_DUNGEON @18
+SAY AREA_DAY @19
+SAY AREA_NIGHT @20
+SAY SELECT_COMMON1 @21
+SAY SELECT_COMMON2 @22
+SAY SELECT_COMMON3 @23
+SAY SELECT_COMMON4 @24
+SAY SELECT_COMMON5 @25
+SAY SELECT_COMMON6 @26
+SAY SELECT_ACTION1 @27
+SAY SELECT_ACTION2 @28
+SAY SELECT_ACTION3 @29
+SAY SELECT_ACTION4 @30
+SAY SELECT_ACTION5 @31
+SAY SELECT_ACTION6 @32
+SAY SELECT_ACTION7 @33
+SAY SELECT_RARE1 @34
+SAY SELECT_RARE2 @35
+SAY CRITICAL_HIT @36
+SAY CRITICAL_MISS @37
+SAY TARGET_IMMUNE @38
+SAY INVENTORY_FULL @39
+SAY BIO @40
+
+COPY ~SarahToB/CREs/K#ANNA1.cre~ ~override/K#ANNA1.cre~
+SAY NAME1 @45
+SAY NAME2 @45
+
+COPY ~SarahToB/CREs/K#LOVES.cre~ ~override/K#LOVES.cre~
+SAY NAME1 @54
+SAY NAME2 @54
+
+// Adds Dialogue
+COMPILE ~SarahToB/Dialogues/K#Sara25.d~
+COMPILE ~SarahToB/Dialogues/K#Sar25B.d~
+COMPILE ~SarahToB/Dialogues/K#fates.d~
+COMPILE ~SarahToB/Dialogues/K#Sar25J.d~
+COMPILE ~SarahToB/Dialogues/K#Sar25P.d~
+COMPILE ~SarahToB/Dialogues/K#ANNA1.d~
+COMPILE ~SarahToB/Dialogues/K#LOVES.d~
+
+// Epilogues
+
+// No Friendship
+
+COPY ~SarahToB/2DAs/BlankEpilogue.2da~ ~override/K#SARAD.2da~
+        REPLACE_TEXTUALLY ~PORTRAIT~ ~SARAHL~ // Their biggest portrait file
+        REPLACE 99999 @55  // The actual epilogue writing itself
+
+// Friendship
+
+COPY ~SarahToB/2DAs/BlankEpilogue.2da~ ~override/K#SARAD1.2da~
+        REPLACE_TEXTUALLY ~PORTRAIT~ ~SARAHL~ // Their biggest portrait file
+        REPLACE 99999 @56  // The actual epilogue writing itself
+
+// Friendship with god
+
+COPY ~SarahToB/2DAs/BlankEpilogue.2da~ ~override/K#SARAD2.2da~
+        REPLACE_TEXTUALLY ~PORTRAIT~ ~SARAHL~ // Their biggest portrait file
+        REPLACE 99999 @57  // The actual epilogue writing itself
+
+// Romance
+
+COPY ~SarahToB/2DAs/BlankEpilogue.2da~ ~override/K#SARAD3.2da~
+        REPLACE_TEXTUALLY ~PORTRAIT~ ~SARAHL~ // Their biggest portrait file
+        REPLACE 99999 @58  // The actual epilogue writing itself
+
+// Romance with god
+
+COPY ~SarahToB/2DAs/BlankEpilogue.2da~ ~override/K#SARAD4.2da~
+        REPLACE_TEXTUALLY ~PORTRAIT~ ~SARAHL~ // Their biggest portrait file
+        REPLACE 99999 @59  // The actual epilogue writing itself
+
+
+// Adds Scripts
+COMPILE ~SarahToB/Scripts/K#Sara25.baf~
+COMPILE ~SarahToB/Scripts/K#Sar25D.baf~
+COMPILE ~SarahToB/Scripts/K#LOVES.baf~
+COMPILE ~SarahToB/Scripts/K#ANNA1.baf~
+EXTEND_TOP ~ar6200.bcs~ ~SarahToB/Scripts/AR6200.baf~
+END
+
+//Adds Sounds
+
+COPY ~SarahToB/audio/K#blank.mus~ ~music~
+COPY_EXISTING ~songlist.2da~ ~override~
+SET_2DA_ENTRY 0 2 3 ~K#BLANK.MUS~
+
+LAF HANDLE_AUDIO END
+
+// Adds Portraits
+
+ACTION_IF GAME_IS ~bg2ee~ BEGIN
+COPY ~SarahToB/Portraits/ee~ ~override~
+END ELSE BEGIN
+COPY ~SarahToB/Portraits/bg2~ ~override~
+END
+
+	 // .2da appending, SoA style
+APPEND ~pdialog.2da~
+~K#Sarah K#SarahP K#SarahJ K#SarahD~
+UNLESS ~K#Sarah~
+UNLESS ~25POST~
+
+APPEND ~interdia.2da~
+~K#Sarah K#SarahB~
+UNLESS ~K#Sarah~
+UNLESS ~25FILE~
+
+// .2da appending, ToB style
+APPEND ~pdialog.2da~
+~K#Sarah K#SarahP K#SarahJ K#SarahD K#Sar25P K#Sar25J K#Sar25D K#Sara25~
+UNLESS ~K#Sarah~
+IF ~25POST~
+
+APPEND ~interdia.2da~
+~K#Sarah K#SarahB K#Sar25B~
+UNLESS ~K#Sarah~
+IF ~25FILE~

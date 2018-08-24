@@ -1,0 +1,7 @@
+IF
+Global("K#SARAHExists","AR1100",0)
+THEN
+RESPONSE #100
+SetGlobal("K#SARAHExists","AR1100",1)
+CreateCreature("K#SARAH",[4084.11],7)
+END

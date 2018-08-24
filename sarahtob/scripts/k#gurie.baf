@@ -1,0 +1,24 @@
+IF
+Global("K#GurienTalk","GLOBAL",0)
+See("K#Sarah")
+InParty("K#Sarah")
+THEN
+RESPONSE #100
+Dialogue("K#Sarah")
+END
+
+IF
+Global("K#GurienTalk","GLOBAL",0)
+!See("K#Sarah")
+InParty("K#Sarah")
+THEN
+RESPONSE #100
+MoveToObject("K#Sarah")
+END
+
+IF
+Global("K#SarahQuestWait","GLOBAL",3)
+THEN
+RESPONSE #100
+DestroySelf()
+END

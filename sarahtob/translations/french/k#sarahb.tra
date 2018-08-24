@@ -1,0 +1,802 @@
+// prélude 1 - enfant de Bhaal
+
+@0    = ~Pardonne-moi d'être si directe <CHARNAME>, mais il faut que je sache : es-tu bien la personne qui a empêché la guerre entre la Porte de Baldur et l'Amn ?~ [K#Sara6#]
+@1    = ~Oui, c'est bien moi.~
+@2    = ~Non, tu me confonds avec quelqu'un d'autre.~
+@3    = ~Dans ce cas, tu es *vraiment* un enfant de Bhaal.~
+@4    = ~Je suis désolée, je... je n'avais jamais imaginé te rencontrer. J'ai beaucoup entendu parler de toi, en bien et aussi en mal je dois dire.~
+@5    = ~Ah vraiment ? Quelles rumeurs as-tu entendues ?~
+@6    = ~Ah, une fan. Raconte-moi ces choses que tu as entendues, s'il te plaît.~
+@7    = ~Tout ceci est très intéressant Sarah mais si tu veux bien, je préfèrerais éviter de parler de mon ascendance.~
+@8    = ~Non, je suis persuadée que j'ai la bonne personne en face de moi. Tu *es* l'enfant de Bhaal dont j'ai tant entendu parler.~
+@9    = ~Oh... d'accord <CHARNAME>. Mes excuses si je t'ai mis mal à l'aise.~ ~Oh... d'accord <CHARNAME>. Mes excuses si je t'ai mise mal à l'aise.~
+@10   = ~Déjà, tu as empêché un homme très maléfique de déclencher ce qui aurait été une guerre particulièrement sanglante.~
+@11   = ~Mais... lui aussi était un enfant de Bhaal, alors pourquoi les gens n'imagineraient-ils pas que tu sois capable de faire quelque chose de similaire ?~
+@12   = ~Eh bien je ne suis pas Sarevok. Lui et moi sommes deux personnes complètement différentes. J'ai empêché cette guerre, et je suis surpris que les gens ne m'en soient pas plus reconnaissants.~ ~Eh bien je ne suis pas Sarevok. Lui et moi sommes deux personnes complètement différentes. J'ai empêché cette guerre, et je suis surprise que les gens ne m'en soient pas plus reconnaissants.~
+@13   = ~Et pourquoi pas ? Ha ha ha ! Ces imbéciles devraient plutôt admirer le puissant personnage que je suis !~
+@14   = ~Je n'ai vraiment pas envie de parler de cela, Sarah. Excuse-moi.~
+@15   = ~Peut-être <CHARNAME>, mais je peux t'assurer qu'il y a des gens, aussi bien à la Porte de Baldur qu'en Amn, qui te sont très reconnaissants de ce que tu as accompli. Cependant tu dois voir la réalité en face : il y en aura toujours qui ne te feront jamais confiance, tout simplement en raison de ton ascendance.~
+@16   = ~(Elle sourit)~
+@17   = ~Réfléchis-y.~
+@18   = ~Hé <CHARNAME>, tu as droit de penser cela car il est vrai que tu es une personne puissante, mais si j'étais toi je ferais quand même attention de ne pas m'en vanter en présence de n'importe qui.~
+@19   = ~Tout le monde n'est pas aussi... tolérant que moi, et certaines personnes pourraient se sentir très froissées par ce genre de paroles. Et lorsque c'est le cas, il arrive souvent qu'elles passent à l'acte.~
+@20   = ~En tout cas, c'est comme cela que je vois les choses.~
+@21   = ~Je n'irai pas jusqu'à me qualifier de "fan", <CHARNAME>. Mais j'ai entendu certaines rumeurs.~
+@22   = ~Déjà, tu as empêché un homme très maléfique de déclencher ce qui aurait été une guerre particulièrement sanglante.~
+@23   = ~Tout le monde n'est pas aussi... tolérant que moi, et certaines personnes pourraient se sentir très froissées par ce genre de paroles. Et lorsque c'est le cas, il arrive souvent qu'elles passent à l'acte.~
+
+// prélude 2 - enfance
+
+@24   = ~<CHARNAME>, d'où es-tu originaire ?~ [K#Sara6$]
+@25   = ~Vu que nous allons voyager ensemble un moment, j'aimerais en savoir un peu plus à ton sujet. Si tu le veux bien.~ [K#Sara6^]
+@26   = ~J'ai grandi à Château-Suif jusqu'à ma vingtième année, puis je suis parti avec mon père adoptif.~ ~J'ai grandi à Château-Suif jusqu'à ma vingtième année, puis je suis partie avec mon père adoptif.~
+@27   = ~En fait je préfèrerais ne pas parler de mon passé, Sarah. Désolé.~ ~En fait je préfèrerais ne pas parler de mon passé, Sarah. Désolée.~
+@28   = ~Qui je suis et d'où je viens ? Cela ne te regarde pas. Maintenant, laisse-moi tranquille !~
+@29   = ~Comme tu voudras, <CHARNAME>.~
+@30   = ~Je n'apprécie guère le ton de ta voix, mais je vais quand même te ficher la paix.~
+@31   = ~Intéressant. Je suis passée plusieurs fois à proximité de Château-Suif, mais je n'ai jamais eu le plaisir de pénétrer dans la grande librairie.~
+@32   = ~Comme je te l'ai déjà dit, je suis originaire de la Porte de Baldur, mais j'ai passé une bonne partie de ma vie dans la forêt de Bois-Manteau.~
+@33   = ~J'ai vécu avec mon père dans l'un des quartiers les plus pauvres de la Porte de Baldur jusqu'à l'âge de treize ans, jusqu'à ce qu'il soit assassiné par un bandit. Son frère, et donc mon oncle, m'a pris sous son aile et m'a appris tout ce que je sais aujourd'hui.~
+@34   = ~Je suis navré d'apprendre une telle chose, Sarah. Ton oncle était-il aussi un rôdeur ?~ ~Je suis navrée d'apprendre une telle chose, Sarah. Ton oncle était-il aussi un rôdeur ?~
+@35   = ~Quelle horreur ! Passer la moitié de ta vie dans les bas-quartiers et qui plus est, perdre ton père. Comment as-tu fait pour t'en sortir ?~
+@36   = ~Je préfèrerais ne pas en parler maintenant.~
+@37   = ~Pour sûr, et très expérimenté qui plus est. Il ne m'a pas seulement appris à survivre dans la nature, mais aussi à l'aimer et à le respecter. Je dois avouer que je me sens bien plus à l'aise dans la forêt qu'en ville.~
+@38   = ~Mais je t'en prie, ne crois pas que je n'aime pas les gens. J'ai guidé de nombreux voyageurs à travers plaines et bois, et je refuse de laisser des gens perdus dans la nature lorsqu'ils n'ont personne d'autre à qui s'adresser.~
+@39   = ~Je le regrette, mais la nature ne connaît pas la pitié.~
+@40   = ~(Elle rougit.)~
+@41   = ~J'ai l'air de quoi, à parler comme ça pour ne rien dire. Coupe-moi la parole la prochaine fois, d'accord ?~
+@42   = ~S'il te plaît, ne porte pas de jugement sur ce que tu n'as jamais vécu. Les bas-quartiers m'ont beaucoup appris au niveau de la sécurité et de la prudence. J'ai appris énormément de choses durant cette période.~
+@43   = ~Mon père et moi étions... très proches.~
+@44   = ~(Elle regarde droit devant elle, comme si elle voyait le fantôme de son père décédé.)~
+@45   = ~Il m'appelait toujours sa "seule et unique". Il aurait fait n'importe quel boulot pour nous rapporter de l'argent, que ce soit du colportage, du travail dans les auberges ou dans les fermes environnantes.~
+@46   = ~C'était un homme très honnête cependant, j'étais et je suis toujours fière de l'appeler mon père.~
+@47   = ~(Elle tourne à nouveau son regard vers vous.)~
+@48   = ~Comment je m'en suis sortie ? J'ai beaucoup souffert de sa mort et j'ai encore un peu de mal à en parler, mais je crois qu'il serait heureux de voir où j'en suis aujourd'hui.~
+@49   = ~Et si on se mettait en route ? Cela fait bien trop longtemps que je bavarde !~
+
+// prélude 3 - Gorion
+
+@50   = ~Est-ce que cela te gêne si je te pose une question personnelle, <CHARNAME> ?~ [K#Sara6%]
+@51   = ~Pas du tout Sarah, vas-y.~
+@52   = ~Encore une ? Laquelle ?~
+@53   = ~En fait, oui. S'il te plaît Sarah, arrête avec ces questions, cela devient gênant.~
+@54   = ~Oh... bien sûr, <CHARNAME>.~
+@55   = ~Je suis désolée, je ne savais pas que cela t'ennuyait. Puisque c'est ça, je te laisse tranquille.~
+@56   = ~Eh bien... c'est à propos de...~
+@57   = ~J'aimerais beaucoup en savoir plus sur ton père adoptif.~
+@58   = ~Qui il est, où il se trouve actuellement.~
+@59   = ~Il s'appelait Gorion, et il a été le meilleur père dont j'aurais pu rêver. C'est lui qui m'a dit qu'il allait falloir fuir Château-Suif pour échapper à Sarevok et ses sbires. C'est cette nuit-là qu'il a perdu la vie pour sauver la mienne.~
+@60   = ~Il s'appelait Gorion, il m'a élevé et est devenu mon mentor. Il a été tué par Sarevok la nuit où nous avons fui Château-Suif.~ ~Il s'appelait Gorion, il m'a élevée et est devenu mon mentor. Il a été tué par Sarevok la nuit où nous avons fui Château-Suif.~
+@61   = ~En fait Sarah, cette question est beaucoup trop personnelle pour que j'y réponde. S'il te plaît, arrête de poser ce genre de questions.~
+@62   = ~C'était un vieux crétin doublé d'un couard ! Maintenant arrête de me poser ce genre de questions stupides !~
+@63   = ~(Sarah vous lance un regard furieux.)~
+@64   = ~Je suis navrée d'apprendre cela, <CHARNAME>.~
+@65   = ~Perdre quelqu'un qui a joué un tel rôle dans sa vie n'est jamais facile. Je sais de quoi je parle.~
+@66   = ~Mais cela ne veut pas dire qu'il faut renoncer à vivre sa vie, n'est-ce pas ?~
+@67   = ~Je suis bien d'accord.~
+@68   = ~Je ne sais pas trop...~
+@69   = ~La vie... est précieuse, <CHARNAME>. Chacun des êtres de ce monde a un rôle à jouer.~
+@70   = ~Dans le grand ordre des choses, c'est la manière dont ils jouent leur rôle qui nous affecte tous.~
+@71   = ~Je ne suis peut-être pas d'accord avec la loi amnienne par exemple, au niveau de ce qu'elle considère injuste ou pas, mais je sais reconnaître un affront fait à la nature. Et, <CHARNAME>...~
+@72   = ~Neuf fois sur dix, ce que je considère être un affront envers la nature se révèle injuste.~
+@73   = ~(Une expression de fatigue apparaît sur son visage. Elle pose sa main sur votre épaule un moment, avant de vous sourire et de s'éloigner.)~
+
+// dialogue amitié 1 - mais quel air sérieux !
+
+@74   = ~(Vous remarquez que Sarah est en train de vous observer. Un petit sourire se forme soudain sur son visage, puis elle rit doucement.)~
+@75   = ~Qu'y a-t-il de si amusant, Sarah ?~
+@76   = ~Est-ce que j'ai fait quelque chose de drôle ?~
+@77   = ~(Ne rien dire)~
+@78   = ~(Sarah s'aperçoit que vous avez remarqué ses rires, et reprend son calme.~
+@79   = ~Hé hé... désolée, je... c'est juste ton visage !~ [K#Sara65]
+@80   = ~Euh... justement non, ce n'est pas qu'il a l'air drôle ! Tu as l'air tellement... sérieux !~ ~Euh... justement non, ce n'est pas qu'il a l'air drôle ! Tu as l'air tellement... sérieuse !~
+@81   = ~Et c'est si ennuyeux que cela ?~
+@82   = ~Nous n'avons pas le temps de rire, Sarah. Il nous faut rester concentrés sur nos missions à accomplir.~
+@83   = ~(Elle reprend immédiatement son sérieux.)~
+@84   = ~Désolée <CHARNAME>. A l'avenir, j'essaierai de ne plus faire ce genre de commentaire inopportun.~
+@85   = ~Non ! Bien sûr que non... mais je pense que tu aurais l'air très charmant si tu souriais un peu plus souvent.~ ~Non ! Bien sûr que non... mais je pense que tu aurais l'air très charmante si tu souriais un peu plus souvent.~
+@86   = ~(Elle fait un grand sourire.) Comme ça !~
+@87   = ~Ha ha, très bien Sarah, je vais essayer de sourire plus, mais c'est bien parce que c'est toi. (Fait un sourire très exagéré.)~
+@88   = ~Je suis quelqu'un de plutôt sérieux Sarah, alors je dois admettre que je ne souris pas très souvent.~
+@89   = ~Eh bien voilà ! A partir de maintenant, essaie de ne plus avoir l'air si sinistre !~
+@90   = ~(Elle vous donne une petite tape taquine dans le dos.)~
+@91   = ~Juste une blague, <CHARNAME>. Cela m'arrive une fois de temps en temps.~
+@92   = ~C'est vrai, tout le monde n'aime pas forcément sourire.~
+@93   = ~J'espère cependant te voir sourire un de ces jours.~
+
+// dialogue amitié 2 - chatouilles
+
+@94   = ~(Alors que vous êtes en train de marcher, un petit coup dans vos côtes vous fait sursauter. Vous vous retournez et voyez Sarah, qui sifflote innocemment en regardant le sol.)~
+@95   = ~(Elle vous regarde et vous fait un clin d'oeil.)~
+@96   = ~Très amusant.~
+@97   = ~S'il te plaît ne fais pas ça, Sarah.~
+@98   = ~Je ne t'ai jamais donné la permission de me toucher, Sarah, j'apprécierais donc que tu ne le fasses plus jamais !~
+@99   = ~D'accord, d'accord ! Pfff, j'essayais juste de mettre un peu de bonne humeur. Je te fiche la paix, d'accord ?~
+@100  = ~(Elle prend un air plutôt embarrassé.)~
+@101  = ~Mes excuses, <CHARNAME>, je voulais juste te faire des chatouilles. Un peu de bonne humeur, quoi.~
+@102  = ~A l'avenir, j'essaierai de ne plus t'embêter comme ça.~
+@103  = ~Ha ! Je le savais ! Tu crains les chatouilles !~ [K#Sara66]
+@104  = ~Pas du tout !~
+@105  = ~Mais si !~
+@106  = ~(Elle tente à nouveau de vous chatouiller, et vous l'évitez d'un geste vif.)~
+@107  = ~Tu vois ? J'ai raison, sinon tu n'aurais pas essayé de m'éviter !~
+@108  = ~(Un sourire victorieux apparaît sur son visage.)~
+@109  = ~Ne raconte plus que tu es une personne ennuyeuse, <CHARNAME>, parce que c'est faux.~
+
+// dialogue amitié 3 - tout sur ma mère
+
+@110  = ~<CHARNAME>, as-tu connu ta mère ?~ [K#Sara67]
+@111  = ~Hélas non. Elle est morte en me donnant naissance. Et toi ?~
+@112  = ~Non, et je ne souhaite pas en parler.~
+@113  = ~(Soupir) Bon, très bien.~
+@114  = ~Je suis désolée, <CHARNAME>.~
+@115  = ~Ma mère nous a abandonnés, mon père et moi, alors que j'avais deux ans. Elle était magicienne, mais je ne sais absolument pas si elle était puissante ou non.~
+@116  = ~(Un trouble extrême se lit sur son visage.)~
+@117  = ~Je ne sais même pas si elle est encore vivante. Mais...~
+@118  = ~Je ressens une grande... antipathie à son égard, surtout parce qu'elle nous a abandonnés, mais aussi parce que cela me conduit à m'interroger...~
+@119  = ~Mon père serait-il resté en vie si elle n'était pas partie ?~
+@120  = ~En vouloir à ta mère est une chose, Sarah, mais il n'y a aucun moyen de savoir si ton père serait encore en vie si ta mère était restée avec lui.~
+@121  = ~Je ne sais pas, Sarah. Mais je te promets de ne *jamais* t'abandonner. Tu es beaucoup plus importante à mes yeux que tu ne l'imagines.~
+@122  = ~Probablement. Elle aurait pu l'empêcher de sortir le jour où il a été tué.~
+@123  = ~Non Sarah. Ton père est mort à cause d'un incident qui n'a rien à voir avec ta mère. Rien n'aurait pu empêcher cela.~
+@124  = ~Je...~
+@125  = ~Je suppose que tu as raison. Je ne saurai jamais comment les choses auraient pu se passer. Cela n'a aucun sens de se poser ce genre de questions, n'est-ce pas ?~
+@126  = ~Et pourtant il me manque. Je l'ai aimé plus que quiconque en ce monde. C'était un homme extraordinaire, et j'espère devenir ne serait-ce que la moitié de la personne qu'il était.~
+@127  = ~Il n'a jamais laissé tomber, jamais perdu espoir, même lors de nos pires moments.~
+@128  = ~Tout le monde rencontre des mauvaises passes. Mais je te promets, Sarah, que je n'ai pas la moindre intention de t'abandonner lorsque les temps seront durs.~
+@129  = ~C'était certainement un homme bon, Sarah. Mais tu l'es tout autant, et je te trouve aussi honnête, travailleuse et persévérante que ton père tel que tu l'as décrit. Je crois que tu n'abandonneras jamais, Sarah, tout comme je ne t'abandonnerai jamais.~
+@130  = ~(Elle saisit doucement votre main.)~
+@131  = ~Merci <CHARNAME>. Je pense que...~
+@132  = ~(Elle lâche votre main et se met à rougir.)~
+@133  = ~Mais excuse-moi, je suis encore en train de parler pour ne rien dire. Mettons-nous en route !~
+@134  = ~Tu crois ? C'est ce dont j'ai vraiment voulu me persuader, <CHARNAME>, mais il y a encore une petite voix au fond de moi qui me dit que cela n'aurait rien changé.~
+@135  = ~Mais... il n'en reste pas moins qu'elle est partie et que mon père est mort. C'est du passé, et je ne peux rien y changer.~
+@136  = ~Continuons notre route.~
+@137  = ~Tu as raison <CHARNAME>. Ni moi ni personne n'y pouvions rien. Ce qui s'est produit... s'est produit, c'est tout.~
+@138  = ~Ma mère... est partie. Mon père est mort. C'est du passé, et je ne peux rien y changer.~
+@139  = ~Je te remercie de m'avoir parlé de cela. Ces discussions... m'aident énormément à comprendre qui je suis... et aussi à mieux cerner les autres.~
+@140  = ~Merci encore. Maintenant, mettons-nous en route.~
+
+// dialogue amitié 4 - comment je suis devenue rôdeuse
+
+@141  = ~(Vous remarquez Sarah en train d'observer une plante plutôt ordinaire. Elle touche très délicatement ses feuilles, puis retire sa main.)~
+@142  = ~Oh... désolée, je n'étais pas en train de ralentir le groupe, n'est-ce pas ?~ [K#Sara68]
+@143  = ~Pas du tout. AU passage, pourquoi es-tu devenue rôdeuse, Sarah ?~
+@144  = ~En fait, si. Essaie d'éviter de te faire distraire comme cela. On peut continuer maintenant ?~
+@145  = ~Non, tout va bien, mais il faut vraiment se mettre en route maintenant.~
+@146  = ~Bien sûr que tu nous ralentis ! Ce n'est pas le moment de jouer avec les plantes. Maintenant, en route !~
+@147  = ~Oh ! C'est une histoire plutôt... ennuyeuse ! Es-tu bien certaine de vouloir l'entendre ?~
+@148  = ~Oui, raconte-la moi s'il te plaît.~
+@149  = ~En fait, pas vraiment.~
+@150  = ~Bon, d'accord.~
+@151  = ~A l'âge de treize ans, après la mort de mon père, mon oncle est venu à la Porte de Baldur pour m'emmener chez lui dans la forêt de Bois-Manteau.~
+@152  = ~Mon oncle est un rôdeur expérimenté, mais aussi un adepte convaincu de Meilikki. Il m'a emmenée dans les bois autour de sa cabane et m'a dit quelque chose dont je me souviendrai éternellement.~
+@153  = ~Et donc ?~
+@154  = ~Il a dit : "Regarde la nature... c'est ton foyer maintenant, Sarah.~
+@155  = ~Et c'est exactement ce qu'il voulait dire. Au fil des années, la forêt est devenue ma maison et j'ai vite oublié ce qu'était ma vie en ville.~
+@156  = ~A l'âge de seize ans, j'ai été convoquée à la Porte de Baldur pour régler des affaires liées à la mort de mon père.~
+@157  = ~Lorsque je m'y suis rendue, j'ai été littéralement étouffée. Tout ce bruit, les gens, la foule, les odeurs qui flottaient dans l'air...~
+@158  = ~J'étais restée si longtemps dans un endroit isolé que j'avais oublié comment me comporter avec d'autres personnes que mon oncle. Pendant ces quatre mois passés dans la ville, j'ai dû m'y réhabituer.~
+@159  = ~D'une certaine manière, mon oncle avait raison. La nature était devenue mon foyer, mais j'ai compris qu'elle ne devait pas devenir le seul endroit dans lequel je sois à l'aise.~
+@160  = ~C'est pourquoi je suis capable de vivre aussi bien dans la nature sauvage qu'en ville ; j'admets cependant être bien plus à l'aise dans la nature qu'enfermée derrière les portails d'une cité.~
+@161  = ~Tu serais surpris de constater à quel point un changement d'environnement peut changer une personne, <CHARNAME>.~ ~Tu serais surprise de constater à quel point un changement d'environnement peut changer une personne, <CHARNAME>.~
+@162  = ~Ah... bon, d'accord.~
+@163  = ~Oh !~
+@164  = ~Dans ce cas, mes excuses. Continuons, je ne vous distrairai plus.~
+@165  = ~Bien sûr <CHARNAME>. Mes excuses pour ce retard.~
+@166  = ~On y va ?~
+@167  = ~Hum. Je te suggère de cesser de manquer de respect envers mon amour de la nature.~
+@168  = ~Je t'excuse pour cette fois, mais à l'avenir je ne tolèrerai plus ce manque de politesse.~
+
+// dialogue amitié 5 - après Spellhold
+
+@169  = ~<CHARNAME>.~
+@170  = ~(Sarah vous saisit le bras.)~
+@171  = ~Ca va bien ? Je n'osais te le demander depuis... en fait depuis Irenicus et...~ [K#Sara69]
+@172  = ~(Soupir) Tu vas bien, alors ?~
+@173  = ~Honnêtement ? Pas vraiment, Sarah. Entre la perte de mon âme, celle d'Imoen et le fait que nous avons deux personnes particulièrement puissantes à retrouver et à éliminer, on va dire que je suis plutôt stressé.~ ~Honnêtement ? Pas vraiment, Sarah. Entre la perte de mon âme, celle d'Imoen et le fait que nous avons deux personnes particulièrement puissantes à retrouver et à éliminer, on va dire que je suis plutôt stressée.~
+@174  = ~Honnêtement ? Pas vraiment, Sarah. Entre la perte de mon âme et le fait que nous avons deux personnes particulièrement puissantes à retrouver et à éliminer, on va dire que je suis plutôt stressé.~ ~Honnêtement ? Pas vraiment, Sarah. Entre la perte de mon âme et le fait que nous avons deux personnes particulièrement puissantes à retrouver et à éliminer, on va dire que je suis plutôt stressée.~
+@175  = ~Tout va bien Sarah, ne t'en fais pas pour moi. Nous nous en sortirons.~
+@176  = ~Ca va. S'il te plaît, laisse-moi tranquille.~
+@177  = ~Mais fiche-moi la paix ! Ne vois-tu pas dans quelle situation je me trouve ? Ne comprends-tu donc rien ?~
+@178  = ~Je ne peux pas imaginer ce que tu es en train de vivre. J'aurais voulu... pouvoir faire quelque chose... n'importe quoi qui aurait empêché ce mage de faire ce qu'il a fait.~
+@179  = ~T'arracher ton âme était... ignoble et contre-nature.~
+@180  = ~Mais je t'aiderai à la retrouver. Je te le promets.~
+@181  = ~Je sais, <CHARNAME>.~
+@182  = ~Et je serai à tes côtés pour t'aider à la récupérer.~
+@183  = ~L'acte de t'arracher ton âme était... ignoble et contre-nature, mais s'il te plaît, comprends que tu n'es pas seul dans cette histoire.~ ~L'acte de t'arracher ton âme était... ignoble et contre-nature, mais s'il te plaît, comprends que tu n'es pas seule dans cette histoire.~
+@184  = ~Nous sommes ensemble, <CHARNAME>.~
+@185  = ~Comme tu voudras <CHARNAME>, mais souviens-toi que je suis à tes côtés.~
+@186  = ~Nous récupèrerons ton âme, je te le promets.~
+@187  = ~Je comprends ta colère <CHARNAME> mais je t'en prie, souviens-toi que je suis ton alliée.~
+@188  = ~Je te laisse tranquille, mais n'hésite pas à faire appel à moi si tu as besoin d'aide. Et j'espère que tu le feras.~
+
+// dialogue amitié 6 - après l'Ombreterre
+
+@189  = ~Je sais bien que je n'ai pas été très bavarde depuis quelques temps, <CHARNAME>, mais je dois dire que tu t'es très bien débrouillé en Ombreterre.~ ~Je sais bien que je n'ai pas été très bavarde depuis quelques temps, <CHARNAME>, mais je dois dire que tu t'es très bien débrouillée en Ombreterre.~ [K#Sara70]
+@190  = ~Je dois admettre que j'étais plutôt mal à l'aise du début à la fin.~
+@191  = ~Merci Sarah, mais c'est ton courage qui m'a donné la force de survivre à cet endroit.~
+@192  = ~Merci Sarah. J'ai juste essayé de faire de mon mieux pour sortir sans dommage d'un tel endroit.~
+@193  = ~Ce n'était pas si compliqué, mais je te remercie pour ce compliment.~
+@194  = ~Oh... je...~
+@195  = ~C'est très gentil, mais je pense sincèrement que tu es l'une des personnes les plus fortes que j'aie jamais rencontrée.~
+@196  = ~C'est un honneur de voyager avec toi, <CHARNAME>. Et j'espère bien que nos voyages communs nous ont rendus plus forts, d'une certaine manière.~ ~C'est un honneur de voyager avec toi, <CHARNAME>. Et j'espère bien que nos voyages communs nous ont rendus plus fortes, d'une certaine manière.~
+@197  = ~C'est évident, Sarah.~
+@198  = ~Pas vraiment. J'étais déjà très fort avant.~ ~Pas vraiment. J'étais déjà très forte avant.~
+@199  = ~Tu penses comme moi, c'est merveilleux !~
+@200  = ~Mettons-nous en route. Nous avons du pain sur la planche !~
+@201  = ~Eh bien si tu le dis... mais je ne parlais pas forcément de force physique, mon ami.~ ~Eh bien si tu le dis... mais je ne parlais pas forcément de force physique, mon amie.~
+@202  = ~Mettons-nous en route. Nous avons du pain sur la planche !~
+@203  = ~Eh bien je dois reconnaître que tu t'en es très bien sorti. En ce qui me concerne, je ne sais pas si j'aurais supporté de rester là-bas une minute de plus.~ ~Eh bien je dois reconnaître que tu t'en es très bien sortie. En ce qui me concerne, je ne sais pas si j'aurais supporté de rester là-bas une minute de plus.~
+@204  = ~Pour être honnête, je me sentais plutôt mal dans cet endroit.~
+
+// dialogue amitié 7 - cicatrices
+
+@205  = ~T'ai-je déjà raconté comment je me suis fait ces cicatrices sur mon visage ?~ [K#Sara71]
+@206  = ~Mais non Sarah, dis-moi.~
+@207  = ~Non, mais je préfèrerais que tu me racontes cela une autre fois.~
+@208  = ~Nous n'avons vraiment pas le temps maintenant, Sarah.~
+@209  = ~Oh... bon, d'accord.~
+@210  = ~D'accord.~
+@211  = ~Un matin, lorsque je vivais à Bois-Manteau, j'étais partie chasser mon futur dîner. J'ai alors vu un cerf en face de moi, je me suis donc cachée derrière un arbre et j'ai sorti mon arc.~
+@212  = ~Malheureusement, j'étais tellement concentrée sur cet idiot de cerf que je n'ai même pas remarqué un gros ours brun pas très loin derrière moi. Je suppose qu'il n'a pas apprécié de me voir pénétrer dans son territoire, alors il m'a attaquée.~
+@213  = ~Tu as été attaquée par un *ours* et tu t'en es sortie avec juste quelques cicatrices sur ton visage ?~
+@214  = ~Ton histoire n'est pas très crédible.~
+@215  = ~Et qu'as-tu fait ?~
+@216  = ~Quel genre de rôdeuse es-tu si tu n'es même pas capable de détecter la présence d'un ours ?~
+@217  = ~Eh bien... j'ai hurlé et j'ai fui pour sauver ma peau. J'étais donc en train de courir et je me suis retournée pour voir si l'ours me suivait ; ce n'était pas le cas. C'est là que j'ai trébuché et que je me suis cogné le visage sur des rochers.~
+@218  = ~Oui je sais, c'est embarrassant, mais c'est comme ça que je me suis fait ces cicatrices !~
+@219  = ~Hé, pas la peine d'ironiser ! Je n'avais que quinze ans et j'étais loin d'être aussi expérimentée qu'aujourd'hui.~
+
+// dialogue amitié 8 - vampires
+
+@220  = ~(Sarah est restée silencieuse depuis un bon bout de temps.)~
+@221  = ~Sarah ?~
+@222  = ~(Poser votre bras sur son épaule.)~
+@223  = ~(Ne rien dire.)~
+@224  = ~Sarah, reste concentrée sur nos objectifs.~
+@225  = ~(Vous continuez à voyager en silence.)~
+@226  = ~Hum ? Oh, désolée. Je suis concentrée, <CHARNAME>, vraiment. J'étais juste en train de réfléchir.~ [K#Sara72]
+@227  = ~A quoi ?~
+@228  = ~Ces vampires que nous avons vus. Ils... je ne les supporte pas, tu vois.~
+@229  = ~Ces créatures ne sont pas... naturelles.~
+@230  = ~...~
+@231  = ~Et puis ils me donnent la chair de poule.~
+
+// lovetalk 1 - mon père ce héros
+
+@232  = ~(Vous remarquez l'air sombre de Sarah.)~
+@233  = ~Tout va bien Sarah ?~
+@234  = ~(Sarah vous regarde et sourit un instant avant de détourner à nouveau la tête.)~
+@235  = ~Ca va <CHARNAME>, mais merci de m'avoir demandé.~ [K#Sara73]
+@236  = ~J'étais en train de penser à... mon père.~
+@237  = ~Mais je suis concentrée sur notre mission, je t'assure.~
+@238  = ~D'accord Sarah, je te crois. Vous étiez très proches tous les deux, n'est-ce pas ?~
+@239  = ~Je te crois. Restons donc concentrées sur notre quête, d'accord ?~
+@240  = ~Alors arrête de rêvasser. A quoi bon te traîner avec moi si tu es incapable de te concentrer sur notre quête ?~
+@241  = ~Rêvasser ? Je pensais à mon *père*, espèce d'idiote. Mon père *assassiné*.~
+@242  = ~Et je n'ai plus la moindre envie que tu me "traînes" avec toi. Bonne chance <CHARNAME>, tu en auras besoin !~
+@243  = ~Comme tu voudras, <CHARNAME>.~
+@244  = ~Assurément.~
+@245  = ~Après le départ de ma mère, nous sommes restés tous les deux dans ce qui n'est certainement pas le plus beau quartier de la Porte de Baldur.~
+@246  = ~Avant ma naissance, mon père avait été mineur pendant plusieurs années. Sa famille vivait à la porte de Baldur, et c'est lors d'une de ses visites qu'il a rencontré ma mère.~
+@247  = ~Apparemment... il a trouvé en elle quelque chose que je ne comprendrai probablement jamais.~
+@248  = ~Je suppose que nous faisons tous des... erreurs.~
+@249  = ~Es-tu en train de me dire que ton père a fait une erreur en se mariant avec ta mère ?~
+@250  = ~Ton père était un grand garçon ; il avait le droit de choisir avec qui il voulait se marier. Je ne vois pas cela comme une erreur.~
+@251  = ~Mais si ton père et ta mère ne s'étaient pas mariés tu ne serais pas là, et je n'aurais pas le plaisir d'avoir cette belle conversation avec toi en ce moment même.~
+@252  = ~Je... non ! Enfin... peut-être.~
+@253  = ~Désolée, c'était très irrespectueux. J'ai... honte d'avoir parlé de mon père de cette manière.~
+@254  = ~C'est juste que je ne peux pas pardonner ma mère de... de nous avoir laissé tomber comme cela. Comme si nous ne représentions rien pour elle.~
+@255  = ~Mon père ne m'a jamais expliqué pourquoi elle était partie et quand je lui demandais, il se contentait de changer de sujet. Il avait toujours l'air très triste lorsque j'évoquais ma mère.~
+@256  = ~Mais c'était un homme bon, et il a fait tout son possible pour m'assurer une éducation décente. Nous n'avions pas les moyens de nous payer le moindre superflu, mais il a fait ce qu'il fallait pour que j'apprenne à lire et écrire.~
+@257  = ~Il m'a fortement dissuadée d'apprendre les arts du combat. Un jour, à l'âge de onze ans, il m'a surprise en train de discuter avec un soldat du Poing Enflammé. Pendant sa garde, ce brave soldat avait pris un peu de temps pour me montrer quelques manoeuvres de base à l'épée.~
+@258  = ~Lorsque mon père nous a vus, il a crié sur ce pauvre soldat et l'a accusé de m'apprendre à trouver une mort rapide.~
+@259  = ~Il a dû me ramener de force à la maison parce que je râlais et nous nous sommes disputés tout au long du chemin, puis il m'a longuement sermonnée au sujet du grand danger des armes, et sur le fait qu'elles n'apportaient que douleur et misère.~
+@260  = ~Je présume... il semble bien qu'il avait raison, d'une certaine manière. J'ai vu le couteau utilisé par l'assassin...~
+@261  = ~Je ne veux plus parler de cela maintenant... je suis désolée.~
+@262  = ~Je... bien sûr !~
+@263  = ~(Son visage rosit et un sourire timide apparaît sur son visage.)~
+@264  = ~M-merci pour ces paroles. Et je m'excuse si j'ai l'air de manquer de respect à mon père. Je ne voulais pas m'exprimer de manière si maladroite.~
+
+// lovetalk 2 - mon père ce héros encore
+
+@265  = ~<CHARNAME>, puis-je te parler de quelque chose ?~ [K#Sara74]
+@266  = ~C'est... plutôt important.~
+@267  = ~Bien sûr Sarah, qu'as-tu en tête ?~
+@268  = ~Désolée Sarah, mais nous n'avons vraiment pas le temps.~
+@269  = ~Tu veux encore me faire perdre mon temps ? Ne m'ennuie pas avec tes histoires maintenant.~
+@270  = ~Perdre ton...~
+@271  = ~Oublie cela ; je ne sais vraiment pas pourquoi j'ai voulu te parler, de toute façon.~
+@272  = ~Si tu insistes, <CHARNAME>, mais il s'agit de quelque chose dont j'ai vraiment besoin de te parler.~
+@273  = ~Je n'en doute pas, Sarah, mais nous n'avons vraiment pas le temps.~
+@274  = ~Bon, d'accord. C'est à quel sujet ?~
+@275  = ~D'accord, très bien.~
+@276  = ~Notre dernière conversation s'est terminée de manière un peu... confuse de ma part, et j'en suis désolée.~
+@277  = ~Je pense que je ne devrais pas te cacher des choses.~
+@278  = ~J'avais treize ans à ce moment-là. Un soir, mon père est sorti. Il m'a dit qu'il devait aller voir quelqu'un.~
+@279  = ~Mais il n'est jamais revenu. Je l'ai attendu toute la nuit. Au matin, je suis partie à sa recherche.~
+@280  = ~Je l'ai trouvé près de l'égout, pas très loin de notre maison.~
+@281  = ~Il... il était face contre terre. Il avait un... couteau, planté dans son dos. La bourse qu'il portait toujours sur lui avait disparu.~
+@282  = ~Il avait été victime d'un voyou de bas-étage. Mon père, un homme bon, avait été tué comme un chien et on l'avait laissé pourrir dans la rue, dans un égout.~
+@283  = ~(Sarah est toute tremblante.)~
+@284  = ~Sarah...~
+@285  = ~Et ceci est supposé me faire pleurer ? Parce que cela ne marche pas. En fait, cela devient plutôt ennuyeux.~
+@286  = ~Oh... vilaine ! Comment oses-tu me dire de telles paroles !~
+@287  = ~Tu... tu n'es pas la personne que je pensais. Au revoir.~
+@288  = ~Non, s'il te plaît... laisse-moi terminer.~
+@289  = ~J'ai alors trouvé l'un des gardes de la ville, et lui ai expliqué ce qu'il s'était passé. Il m'a dit qu'il enverrait quelqu'un pour m'aider, mais personne n'est jamais venu.~
+@290  = ~Je suis restée aux côtés de mon père pendant des heures, un commerçant aimable de l'autre côté de la rue a fini par me voir et est venu à mon aide. Son fils et lui ont pu ramener le corps de mon père à la maison. Je suis restée toute seule un jour et demi, jusqu'à ce qu'un groupe de soldats du Poing Enflammé finisse par se présenter à la maison.~
+@291  = ~Ils ont emporté le corps de mon père et m'ont amenée à l'auberge la plus proche. l'un des soldats fut assez aimable pour me louer une chambre et m'acheter à manger.~
+@292  = ~Je suis restée à l'auberge quelques jours, jusqu'à ce que mon oncle arrive et m'emmène chez lui, dans la forêt de Bois-Manteau. Avant de quitter la ville, nous avons organisé des funérailles très simples.~
+@293  = ~Et je crois que tu connais le reste de l'histoire. A dix-huit ans, j'ai quitté Bois-Manteau et me suis dirigée vers le sud. J'avais besoin de découvrir les forêts au-delà de mon horizon.~
+@294  = ~Je crois qu'on peut dire que j'avais déjà l'esprit d'aventure !~
+@295  = ~Je pense que... te raconter tout cela m'a beaucoup aidée. je n'avais jamais raconté mon histoire à personne.~
+@296  = ~(Elle vous fait un grand sourire et vous saisit le poignet un petit moment, avant de retirer sa main d'un geste vif.)~
+@297  = ~Reprenons la route.~
+
+// lovetalk 3 - séance de drague
+
+@298  = ~(Cela fait une heure que Sarah vous regarde avec insistance.)~
+@299  = ~Tout va bien, Sarah ?~
+@300  = ~Sarah, pourquoi me regardes-tu comme ça ?~
+@301  = ~Sarah, tu m'observes en permanence et cela commence à m'irriter. Arrête.~
+@302  = ~Sarah, j'aimerais bien que tu arrêtes de me fixer du regard à ce point.~
+@303  = ~Euh... bien sûr. Mes excuses, <CHARNAME>.~ [K#Sara75]
+@304  = ~D'abord, je ne t'observe pas *en permanence*. Ne sois pas si sure de toi, <CHARNAME>. Si tu crois que je te prends pour une déesse, tu te trompes.~ [K#Sara76]
+@305  = ~(Surprise, Sarah rougit vivement et évite votre regard.)~
+@306  = ~Je... je suis désolée <CHARNAME>... c'est juste que, hum...~ [K#Sara77]
+@307  = ~Tu marches d'une manière vraiment... féline. Ce qui n'est pas le cas de la plupart des gens.~ [K#Sara78]
+@308  = ~Puis-je te parler en privé, <CHARNAME> ?~ [K#Sara79]
+@309  = ~Bien sûr.~
+@310  = ~En fait, je n'ai pas très envie de parler maintenant. Continuons notre route, d'accord ?~
+@311  = ~D'accord. Allons-y.~ [K#Sara80]
+@312  = ~Je dois avouer que je me comporte d'une manière un peu... bizarre ces derniers temps. Je dois te dire qu'à chaque jour qui passe, je me sens de plus en plus attachée à toi.~ [K#Sara81]
+@313  = ~Je réalise bien que tu vas trouver étrange d'entendre ce genre de choses de ma bouche. Mais je me sens maintenant suffisamment à l'aise avec toi pour pouvoir tout te dire.~ [K#Sara82]
+@314  = ~Je pense que tu es une belle femme, <CHARNAME>. Il n'y a aucun doute : ce que je ressens est le résultat de ta gentillesse envers moi doublée de ta capacité innée à... charmer les filles. Une fille comme moi, en tout cas.~ [K#Sara83]
+@315  = ~(Elle baisse ses yeux, puis se remet à vous fixer du regard.)~
+@316  = ~C'est... quelque chose de difficile à avouer, <CHARNAME>. J'espère que je ne t'ai pas mise terriblement mal à l'aise.~ [K#Sara84]
+@317  = ~Bien sûr que non Sarah. Mais je dois dire que je ne te vois pas de la même manière. Tu es une amie, et je souhaite que les choses en restent là.~
+@318  = ~Pas du tout, Sarah. Je dois admettre que j'ai le même genre de sentiment envers toi. Tu es la personne la plus belle, la plus intelligente et la plus... spéciale que j'aie jamais rencontrée.~
+@319  = ~Tes paroles vont trop loin, Sarah. Je n'apprécie pas le fait que tu me dévores du regard, tes questions ainsi que cette "attirance" que tu as pour moi. Cela doit cesser, et tout de suite.~
+@320  = ~(Elle mord sa lèvre et semble d'abord plutôt blessée, mais reprend sa contenance et vous répond sans aucune hésitation.)~
+@321  = ~Bien sûr <CHARNAME>. Ton amitié a beaucoup d'importance, et j'ai bien l'intention que nous restions amies.~
+@322  = ~Merci toutefois de m'avoir permis de te confier mes sentiments.~
+@323  = ~(Elle vous regarde d'un air radieux. Son sourire la rend absolument rayonnante.)~
+@324  = ~Tu... c'est vraiment ce que tu penses ? Toi... moi...~ [K#Sara85]
+@325  = ~Je... hum...~ [K#Sara86]
+@326  = ~(Prendre la main de Sarah.) Ne dis rien.~
+@327  = ~(Serrer Sarah dans vos bras.) Oui. Toi et moi.~
+@328  = ~(Elle serre votre main et se remet à rougir.)~
+@329  = ~(Toute souriante, elle s'abandonne à votre étreinte, sa tête reposant sur votre épaule.)~
+@330  = ~Quoi ?~
+@331  = ~Je veux dire... je comprends, <CHARNAME>. S'il te plaît... pardonne-moi de t'avoir mise si mal à l'aise. Je ne te dérangerai plus. Au revoir.~
+
+// lovetalk 4 - le gros bisou
+
+@332  = ~(Alors que vous vous apprêtez à faire une petite pause, vous remarquez que Sarah s'est un peu éloignée pour s'asseoir sous un arbre.)~
+@333  = ~(S'asseoir à côté d'elle.) Je peux m'asseoir à côté de toi ?~
+@334  = ~(La laisser tranquille.)~
+@335  = ~(Vous la laissez tranquille, et reprenez rapidement votre route.)~
+@336  = ~(Elle vous regarde et vous fait un sourire timide.)~
+@337  = ~Oh... bien sûr que oui, <CHARNAME>. Quelque chose te tracasse ?~ [K#Sara87]
+@338  = ~Je... j'espère que notre dernière conversation ne t'a pas contrariée.~
+@339  = ~Oh, pas du tout, Sarah. J'avais juste envie de passer un petit moment rien qu'avec toi.~
+@340  = ~En fait si, Sarah, un peu. Notre relation, toi et moi, je ne crois pas que ce soit une très bonne idée. Peut-être devrions-nous rester simplement amies ?~
+@341  = ~(Elle prend un air extrêmement peiné, et il s'écoule un long moment avant qu'elle ne réponde.)~
+@342  = ~Si... si tu penses que c'est mieux comme cela, <CHARNAME>... je te fais confiance, et donc je suppose que je n'arriverai pas à te convaincre de changer d'avis.~
+@343  = ~(Elle se force à faire un pâle sourire.)~
+@344  = ~Nous sommes donc amies, et pour toujours, je l'espère.~
+@345  = ~(Elle saisit votre main avec douceur.)~
+@346  = ~C'est gentil, <CHARNAME>. J'adore tous ces petits moments que nous passons ensemble.~
+@347  = ~En toute honnêteté, je n'ai jamais vraiment été... très proche de quelqu'un. Mais tu n'es pas "quelqu'un". Tu es... différente.~
+@348  = ~Différente ? Comment ?~
+@349  = ~C'est parce que je suis un enfant de Bhaal ?~
+@350  = ~Je me révèle à toi, <CHARNAME>. Je t'ai raconté des choses que je n'avais jamais dites à *personne* auparavant. A tes côtés, je me sens moi-même.~
+@351  = ~Avec toi je me sens... protégée.~
+@352  = ~Tu es très importante pour moi, et je veux que tu le saches.~
+@353  = ~Est-ce que tout cela a un sens ? Ou suis-je encore en train de parler pour ne rien dire ?~
+@354  = ~(Vous vous penchez lentement pour l'embrasser.)~
+@355  = ~Oui, cela a beaucoup de sens, Sarah.~
+@356  = ~Je pense que tu es encore en train de dire un peu n'importe quoi.~
+@357  = ~Oh, non... cela n'a rien à voir. Mais...~
+@358  = ~(Elle prend un air quelque peu ennuyé.)~
+@359  = ~Vraiment ? C'est... merveilleux. Et je n'exagère pas.~
+@360  = ~(Elle serre légèrement votre main et commence à se rapprocher de vous.)~
+@361  = ~... vraiment.~
+@362  = ~(L'embrasser.)~
+@363  = ~(S'écarter d'elle.) C'est formidable Sarah, je suis heureuse que tu le ressentes de cette manière.~
+@364  = ~(Elle mord sa lèvre inférieure un petit moment.)~
+@365  = ~Bon, très bien. Nous ferions mieux de nous mettre en route.~
+@366  = ~(Vos deux souffles se mélangent alors que vos lèvres entrent en contact, tout en douceur. Ce baiser vous semble durer un temps infini, mais il vous semble pourtant bien trop court lorsque vos lèvres se séparent.)~
+@367  = ~(Sarah a l'air à la fois sidérée et déçue, mais ses joues ont cependant bien rosi.)~
+@368  = ~C'était... sympa, hé hé.~
+@369  = ~Ah oui, pour sûr.~
+@370  = ~Oui Sarah, mais je pense que nous devrions peut-être juste rester amies.~
+@371  = ~Ce n'était pas extraordinaire.~
+@372  = ~(Sarah, nerveuse, baisse les yeux ; sa bonne humeur a totalement disparu.)~
+@373  = ~Je m'excuse. Je n'aurais pas dû faire cela, ce n'était pas opportun.~
+@374  = ~Nous devrions nous remettre en route.~
+@375  = ~(Elle s'agite nerveusement, mais vous sourit.)~
+@376  = ~Nous devrions nous mettre en route, n'est-ce pas ?~
+@377  = ~(Elle serre à nouveau votre main de manière involontaire, mais assez fort cette fois.)~
+
+// lovetalk 5 - your eyes, like the blue in the summer skyyyyyyyy...
+
+@378  = ~Quelqu'un t'a-t-il déjà dit que tu as de beaux yeux, <CHARNAME> ?~ [K#Sara88]
+@379  = ~Hé, pas suffisamment, mais merci Sarah. Les tiens aussi sont superbes.~
+@380  = ~Je n'en ai pas le souvenir, mais merci Sarah. Toi et tes douces paroles avez beaucoup d'importance pour moi.~
+@381  = ~Bien trop souvent hélas, et à l'avenir j'aimerais bien que tu arrêtes tes commentaires à leur sujet.~
+@382  = ~J'aime beaucoup discuter avec toi Sarah, mais je pense que ce serait mieux pour nous deux si nous restions juste amies.~
+@383  = ~C'est gentil, ma chérie.~
+@384  = ~Mais même si je te l'ai déjà dit, je vais te le répéter : tu es vraiment la plus belle femme que j'aie jamais rencontrée.~
+@385  = ~(Elle saisit votre main et vous attire à elle.)~
+@386  = ~Je n'ai pas l'habitude d'être comme ça, <CHARNAME>, si extravertie et courageuse, mais c'est le fait d'être à tes côtés qui me pousse à agir ainsi.~
+@387  = ~Tu as toujours eu ce courage en toi, Sarah. Je crois qu'il est tout simplement en train de se révéler parce que tu côtoies une personne en qui tu as confiance.~
+@388  = ~Moi aussi je me sens plus forte à tes côtés, Sarah.~
+@389  = ~Oh... si tu le prends comme ça, très bien ; mais mon opinion à leur sujet ne changera pas, chérie.~
+@390  = ~(Elle vous embrasse sur la joue.)~
+@391  = ~Peut-être que tu as raison. J'ai plus confiance en toi qu'en n'importe qui. Après tout, je t'ai raconté des choses que je n'avais dites à... personne !~
+@392  = ~Et puis nous avons partagé un moment si merveilleux il y a quelques jours...~
+@393  = ~(Grand sourire) J'ai un trou de mémoire ; qu'est-ce qui s'est passé, déjà ?~
+@394  = ~Pour sûr, et peut-être que, si tu en as envie, nous pourrions aller un peu plus loin ce soir ?~
+@395  = ~Ah, oui... cela m'a beaucoup plu Sarah, et j'aimerais bien remettre ça à l'occasion.~
+@396  = ~Merci. Tu es si gentille. Je ne connais personne d'autre aux côtés de qui je me sente aussi forte.~
+@397  = ~Et puis nous avons partagé un moment si merveilleux il y a quelques jours...~
+@398  = ~(Elle se rapproche encore plus et vous embrasse.)~
+@399  = ~Comme ça, peut-être ?~
+@400  = ~(Elle vous fait un clin d'oeil, avant de s'éloigner.)~
+@401  = ~(Elle se rapproche encore plus et vous embrasse. Lorsqu'elle se retire, son visage est tout rouge.)~
+@402  = ~Je... je pense avoir saisi ce que tu me suggères, mais...~
+@403  = ~Ne brûlons pas les étapes, d'accord ?~
+
+// lovetalk 6 - tu m'aimes ou tu m'aimes ?
+
+@404  = ~<CHARNAME>, j'ai une question à te poser.~ [K#Sara89]
+@405  = ~Et c'est important.~
+@406  = ~Bien sûr Sarah, dis-moi ?~
+@407  = ~Oui Sarah ?~
+@408  = ~Est-ce que cela peut attendre, Sarah ? Il y aura des moments plus opportuns que celui-ci pour discuter.~
+@409  = ~Pas maintenant Sarah, laisse-moi tranquille.~
+@410  = ~Tu... je veux juste te parler. Tu veux que je te fasse confiance, et pourtant tu me repousses.~
+@411  = ~J'ai l'impression que rester ensemble, toi et moi, n'est pas une si bonne idée. Je suis désolée, mais cela ne marchera pas.~
+@412  = ~(Soupir) Si tu veux, chérie, mais s'il te plaît garde à l'esprit que quand je dis quelque chose qui est important pour moi, ce ne sont pas des paroles en l'air.~
+@413  = ~Je... je veux juste être certaine que tu n'as pas de problème avec tout ça.~
+@414  = ~Avec quoi ?~
+@415  = ~Avec nous. Toi et moi. Ensemble.~
+@416  = ~Désolée si je te donne l'impression de ne pas être sûre : ce n'est pas ce que je veux ! Mais j'ai tendance à beaucoup douter de moi-même, et j'ai parfois du mal à croire que je suis vraiment avec une personne aussi... exceptionnelle que toi.~
+@417  = ~Bien sûr qu'il n'y a aucun problème. Tu comptes plus que tout pour moi, Sarah, et je ne m'imagine pas une seule seconde sans toi.~
+@418  = ~Je n'ai aucun doute à ce sujet, Sarah. Nous sommes ensemble, et nous le resterons.~
+@419  = ~Même si j'ai bien apprécié le temps que nous avons passé ensemble, Sarah, je pense que ce serait mieux pour toutes les deux si nous restions juste amies.~
+@420  = ~(Elle vous serre très fort, et caresse en douceur l'arrière de votre cou.)~
+@421  = ~Tu n'imagines pas à quel point je suis heureuse de t'entendre dire cela.~
+@422  = ~(Elle amène votre main à ses lèvres et l'embrasse.)~
+@423  = ~Je crois que tu es vraiment la fille qu'il me faut.~
+
+// lovetalk 7 - la forêt, c'est ma grande passion
+
+@424  = ~(Soupir) Quelle belle journée !~ [K#Sara90]
+@425  = ~La forêt nous offre tellement plus de beauté que les villes. Qu'en penses-tu, <CHARNAME> ?~
+@426  = ~Tout à fait d'accord, Sarah. Je me sens moi aussi bien plus à l'aise dans la forêt.~
+@427  = ~La forêt est très belle, Sarah, mais la ville a aussi ses avantages.~
+@428  = ~En toute honnêteté, Sarah, je ne supporte pas la forêt. Je me sens bien mieux en ville.~
+@429  = ~(Elle penche sa tête en arrière vers le ciel et ferme les yeux.)~
+@430  = ~Je me sens tellement... libre ici.~
+@431  = ~(Elle vous regarde, quelque peu embarrassée.)~
+@432  = ~Désolée, tu dois me trouver vraiment excentrique là.~
+@433  = ~(Vous l'embrassez sur sur la joue) pas du tout.~
+@434  = ~Pas de problème Sarah, j'aime les gens excentriques. (Vous l'attirez à vous et l'embrassez.)~
+@435  = ~(Vous prenez sa main.) Non, c'est tout à fait normal. Il est bon que tu aies un endroit où tu te sens libre.~
+@436  = ~Un petit peu, quand même.~
+@437  = ~Quand les gens sont sympathiques et que les rues ne sont pas couvertes de crasse, la ville peut être un merveilleux endroit.~
+@438  = ~Mais hormis quelques petits villages que j'ai visités, je n'ai encore jamais vu de ville qui corresponde à cette description.~
+@439  = ~Et puis c'est juste qu'ici je me sens si... libre.~
+@440  = ~Tu ne *supportes* pas la forêt ?~
+@441  = ~La forêt est l'une des formes les plus pures de la nature, <CHARNAME>. Nous en avons besoin.~
+@442  = ~Mais... je suppose qu'il nous faudra admettre que nous ne sommes pas d'accord. Certains d'entre nous préfèrent la forêt, d'autres préfèrent la ville. J'avoue que j'ai parfois du mal à me rappeler que nous avons tous nos préférences personnelles au sujet des endroits où nous préférons vivre.~
+@443  = ~Nous sommes tous un peu différents, et c'est aussi le cas pour nous deux.~
+@444  = ~(Elle rougit et se penche vers vous.)~
+@445  = ~Parfait.~
+@446  = ~(Elle s'abandonne à votre baiser et vous serre dans ses bras.)~
+@447  = ~Hé... si tu le dis, ma chérie.~
+@448  = ~(Elle serre votre main et vous regarde dans les yeux.)~
+@449  = ~Merci. Je ne sais pas ce que je deviendrais sans toi.~
+@450  = ~(Elle sourit.)~
+@451  = ~Eh bien dans ce cas je vais essayer de ne plus avoir l'air aussi bizarre.~
+@452  = ~...Je ne crois pas que ça va marcher, <CHARNAME>.~
+@453  = ~Chaque fois que j'essaie de te parler, tu me remballes comme une moins-que-rien.~
+@454  = ~Je suis désolée, mais je crois qu'entre nous ça ne marchera pas.~
+@455  = ~Je souhaiterais cependant que nous restions amies.~
+
+// lovetalk 8 - Tu veux ou tu veux pas ?
+
+@456  = ~(Sarah remarque que vous êtes assise à côté de votre tente et se dirige vers vous.)~
+@457  = ~Je peux m'assoir ici ?~ [K#Sara91]
+@458  = ~Bien sûr.~
+@459  = ~Si tu veux.~
+@460  = ~En fait je préfèrerais que non, Sarah. Je me préparais à aller dormir.~
+@461  = ~Non. S'il te plaît, laisse-moi tranquille.~
+@462  = ~(Elle mord sa lèvre inférieure et semble très mal à l'aise.)~
+@463  = ~Si c'est ce que tu veux, <CHARNAME>, très bien.~
+@464  = ~Oh. Si tu en as envie, je peux rester avec toi.~
+@465  = ~Mais bien sur, c'est toi qui vois.~
+@466  = ~Pas ce soir Sarah, mais merci quand même.~
+@467  = ~D'accord, ce serait sympa.~
+@468  = ~Tu voudrais que je t'accepte dans *ma* tente ? Je crois que ça ne va pas être possible.~
+@469  = ~Aurais-tu par hasard l'intention de te... rapprocher de moi beaucoup plus que d'habitude ?~
+@470  = ~(Elle vous regarde d'un air furieux pendant quelques instants.)~
+@471  = ~C'était juste une proposition, <CHARNAME>. Mais ton comportement... insupportable m'a aidée à me faire une opinion claire à ton égard.~
+@472  = ~Adieu, nous ne nous reverrons plus.~
+@473  = ~Oh... hum.~
+@474  = ~C'est que... je ne pense pas être prête à cela, ma chérie.~
+@475  = ~Oh arrête, c'était juste une blague.~
+@476  = ~Inutile de t'inquiéter, Sarah, je veux juste être tout près de toi. Juste te toucher.~
+@477  = ~Tu... tu te fiches de savoir ce que je ressens. Pour toi, je ne suis rien d'autre qu'un objet de désir !~
+@478  = ~Je ne peux pas m'épanouir dans ce genre de relation. Désolée, c'est tout simplement impossible.~
+@479  = ~Adieu <CHARNAME>.~
+@480  = ~Bon, d'accord.~
+@481  = ~(Timidement, elle vous suit dans la tente et se met à l'aise, juste à côté de vous.)~
+@482  = ~Humm... comme c'est agréable d'enfin me retrouver seule avec toi.~
+@483  = ~(Elle se penche pour vous embrasser.)~
+@484  = ~(Vous vous écartez.) Sarah, j'ai vraiment besoin de dormir, là.~
+@485  = ~(Elle s'écarte.)~
+@486  = ~Oh, d'accord... désolée. Dans ce cas, je te laisse dormir.~
+@487  = ~(Vous l'embrassez, et Sarah vous retourne votre baiser avec plus de fougue que d'habitude. Elle soupire de plaisir et vous serre dans ses bras...)~
+@488  = ~(...avant de se retirer.)~
+@489  = ~(Elle vous regarde d'un air assez embarrassé, un demi-sourire sur son visage.)~
+@490  = ~Euh... désolée. Je crois que je me suis un peu laissée... emporter.~
+@491  = ~Je pense que nous devrions aller dormir. Bonne nuit <CHARNAME>.~
+
+// lovetalk 9 - après la quête de Sarah. Y'a moyen de conclure !!!
+
+@492  = ~(Alors que vous vous préparez à une bonne nuit de sommeil, Sarah s'approche de vous.)~
+@493  = ~<CHARNAME>, puis-je te parler un petit moment s'il te plaît ?~ [K#Sara92]
+@494  = ~Près de ma tente ?~
+@495  = ~Là je suis plutôt fatiguée, alors je crois que je vais aller dormir.~
+@496  = ~Non. S'il te plaît Sarah, laisse-moi tranquille.~
+@497  = ~(Elle vous lance un regard furieux.)~
+@498  = ~Tu sais, je voulais juste te parler... te dire à quel point je te remercie de tout ce que tu as fait pour ma famille.~
+@499  = ~Mais je vois que tu t'en fiches. Je... je ne crois pas que cela puisse fonctionner entre nous.~
+@500  = ~Je suis désolée... je reste dans ton équipe, mais notre relation personnelle est terminée.~
+@501  = ~(Elle a l'air très triste et soupire.)~
+@502  = ~Mais je vois bien que soit tu t'en fiches complètement, soit tu ne daignes pas me consacrer ne serait-ce qu'un petit moment. Je... je ne crois pas que ça puisse marcher entre nous.~
+@503  = ~(Vous la suivez jusqu'à sa tente ; elle se retourne et vous regarde.)~
+@504  = ~Je... voulais juste te dire à quel point je te remercie de tout ce que tu as fait pour ma famille.~
+@505  = ~Beaucoup de gens ne se seraient pas donné tant de peine.~
+@506  = ~Mais tu n'es pas n'importe qui, Sarah.~
+@507  = ~Merci.~
+@508  = ~Et tu m'as amenée ici pour me raconter ça ? Tu me fais perdre mon temps.~
+@509  = ~Tu es vraiment la personne la plus merveilleuse que j'aie jamais rencontrée, <CHARNAME>.~
+@510  = ~(Elle prend votre main.)~
+@511  = ~Je t'aime, et je crois que... j'aimerais vraiment être plus proche de toi. Plus proche que je ne l'ai jamais été.~
+@512  = ~Hum... enfin... seulement si tu es d'accord, bien sûr...~
+@513  = ~Tu vas sûrement trouver que j'ai beaucoup de mal à exprimer mes sentiments, et particulièrement à ton sujet.~
+@514  = ~Pas du tout, Sarah. Je t'aime plus que tout, et ce serait un honneur de passer cette nuit avec toi.~
+@515  = ~Pas de problème Sarah. Tu es tellement importante à mes yeux, j'adorerais passer cette nuit avec toi.~
+@516  = ~Je t'aime, Sarah, mais je ne pense pas y être prête ce soir. Je suis désolée.~
+@517  = ~Dormir avec toi ?! Ha, c'est amusant. Pendant quelques instants, j'ai presque pensé que tu étais sérieuse.~
+@518  = ~Toi... espèce de harpie !~
+@519  = ~Je t'ai aidée, je t'ai défendue, j'ai combattu à tes côtés, je t'ai raconté des choses que je n'avais jamais dites à personne, et pourtant tu es là à m'insulter !~
+@520  = ~Si tu ne veux pas passer la nuit avec moi, très bien, pas de problème, mais te comporter d'une manière si... abjecte...~
+@521  = ~C'est fini. Au revoir <CHARNAME>.~
+@522  = ~(Elle serre vos mains.)~
+@523  = ~Inutile de t'excuser, ma chérie. Bien que j'aie vraiment envie d'être tout contre toi, je ne vais certainement pas te forcer si tu n'y es pas prête.~
+@524  = ~Mais quand tu le seras, fais-le moi savoir. Là, je pense que je vais aller dormir.~
+@525  = ~(Elle vous embrasse sur la joue.) Bonne nuit <CHARNAME>.~
+@526  = ~(Elle sourit et vous amène dans sa tente.)~
+@527  = ~(Elle ferme le rabat et vous attire à elle pour vous embrasser.)~
+@528  = ~Je... n'ai jamais... couché avec quelqu'un, <CHARNAME>.~
+@529  = ~Ne t'inquiète pas. Fais juste ce qui te semblera naturel.~
+@530  = ~Tu es sérieuse ? Dans ce cas, laisse tomber. Je n'ai pas l'intention de perdre mon temps avec une débutante.~
+@531  = ~(Elle vous serre très fort dans ses bras.)~
+@532  = ~B-bon, d'accord...~
+
+// lovetalk 10 - après la chaude nuit, le debriefing
+
+@533  = ~(Vous êtes réveillées par les rayons de soleil qui se glissent par le rabat de la tente. Vous vous tournez sur le côté.)~
+@534  = ~(Sarah est déjà réveillée, nue sous sa couverture. Elle vous sourit.)~
+@535  = ~Bonjour.~ [K#Sara93]
+@536  = ~Il est déjà tard. Il faudrait nous mettre en route assez vite.~ [K#Sara94]
+@537  = ~(Elle change de position, et semble très nerveuse.)~
+@538  = ~Alors... hum... c'était comment ?~ [K#Sara95]
+@539  = ~Cette nuit, j'ai vécu l'expérience la plus incroyable de ma vie. Je t'en remercie.~
+@540  = ~C'était très bien.~
+@541  = ~C'était pas mal... mais je ne crois pas que nous devrions continuer à nous fréquenter comme cela. Je préfèrerais que nous soyons juste amies.~
+@542  = ~J'ai vu mieux.~
+@543  = ~En toute honnêteté... ce n'était franchement pas terrible.~
+@544  = ~Je n'arrive pas à croire que j'ai perdu une nuit entière avec toi.~
+@545  = ~Oh...~
+@546  = ~(Elle a l'air très déçue.)~
+@547  = ~Si... si c'est ce que tu souhaites... je suis désolée que cela se passe comme ça.~
+@548  = ~Mais... restons amies.~
+@549  = ~(Elle est à l'évidence accablée.)~
+@550  = ~Je... je suis désolée. mais je t'avais dit que je n'avais... aucune expérience. Je pense...~
+@551  = ~Je pense qu'à partir de maintenant, ce serait mieux que nous restions juste amies.~
+@552  = ~Je suis désolée.~
+@553  = ~Tu... mais tu voulais... tu avais dit que...~
+@554  = ~(Elle tremble.)~
+@555  = ~Très bien. Je m'en vais. Je suis désolée de t'avoir déçue à ce point cette nuit.~
+@556  = ~(Elle s'habille en vitesse.)~
+@557  = ~(Elle fait un grand sourire et vous embrasse.)~
+@558  = ~Ce fut... un honneur pour moi, <CHARNAME>. Et j'espère... que je pourrai revivre... une telle expérience.~
+@559  = ~(Elle saisit votre main.)~
+@560  = ~Je t'aime.~
+
+// lovetalk 11 - tu m'aimes, hein ?
+
+@561  = ~<CHARNAME>...~
+@562  = ~Il faut que je te parle.~ [K#Sara96]
+@563  = ~(Elle a l'air très nerveuse)~
+@564  = ~A quel sujet ?~
+@565  = ~Nous n'avons pas le temps maintenant.~
+@566  = ~Encore ? Arrête de m'ennuyer.~
+@567  = ~Toi... oublie ce que j'ai dit ! Tu sais quoi ? Oublie tout !~
+@568  = ~Ceci... toi et moi... c'est fini, <CHARNAME>.~
+@569  = ~Pas le temps... <CHARNAME>, c'est vraiment important.~
+@570  = ~Tu sais, si tu ne veux pas m'écouter, peut-être devrions-nous rester juste amies... sans plus.~
+@571  = ~Je suis désolée, mais je pense que c'est le mieux.~
+@572  = ~Eh bien je voulais juste te dire que...~
+@573  = ~<CHARNAME>, je t'ai rejointe pour t'aider dans ta quête. Mais maintenant... on dirait que j'ai trouvé une raison supplémentaire de rester à tes côtés.~
+@574  = ~Je t'aime, je ne l'avais jamais dit à personne dans le sens qu'il revêt à ton égard, c'est la vérité et je suis certaine de mes sentiments.~
+@575  = ~C'est ce que je tenais à te dire.~
+@576  = ~Sarah, je t'aime aussi. Merci d'être à mes côtés.~
+@577  = ~Pour moi tu comptes plus que tout, Sarah. Merci d'être à mes côtés.~
+@578  = ~Sarah... je ne pense pas que nous devrions poursuivre ce genre de relation. Je préfèrerais que nous soyons juste amies.~
+@579  = ~(Elle vous serre dans ses bras et vous embrasse fougueusement.)~
+
+// dialogue Sarah - Mazzy 1
+
+@580  = ~Mazzy, c'est toi qui en sais le plus sur ce qui se passe dans cette... crypte. Que sais-tu exactement de ce Seigneur d'Ombre ?~
+@581  = ~A vrai dire, pas grand chose. Tout ce que je peux dire, c'est que ses sbires ont capturé mon groupe et qu'il m'a choisie pour être son "épouse".~
+@582  = ~Epouse ? Et pour faire... quoi ? As-tu une idée de ses plans ?~
+@583  = ~Il a été plutôt vague. J'ai surtout eu le malheur d'être malmenée par ses sbires avant d'être jetée dans cette cellule crasseuse où tu m'as trouvée enfermée.~
+@584  = ~Eh bien je suis heureuse d'avoir trouvé un autre puissante lame pour nous aider. As-tu une idée des raisons qui l'ont amené à te choisir comme épouse ?~
+@585  = ~Peut-être parce que j'étais la chef de ce groupe. Certaines personnes pensent que les leaders sont ceux qui disposent du pouvoir ; il n'y a rien de plus faux.~
+@586  = ~Je suis bien d'accord. Cela fait un moment que je suis dans cette zone et je dois admettre que je n'ai entendu que des rumeurs au sujet de ce qui se cache derrière ces disparitions récentes. Mais tu as beaucoup de chance. Dès l'instant où j'ai mis les pieds dans ces bois, j'ai senti l'aura infecte de ce monstre.~
+@587  = ~Moi aussi, Sarah. J'ai eu beaucoup de chance d'avoir été secourue, vu l'endroit où je me trouvais. Maintenant, j'aimerais savoir ce qu'il est advenu de mes compagnons.~
+@588  = ~Nous les trouverons, Mazzy. Ils doivent être par là ; je doute que le Seigneur d'Ombre les laisse en liberté après ce qui s'est passé.~
+@589  = ~Je sais, Sarah. Merci pour ton soutien.~
+
+// dialogue Sarah - Mazzy 2
+
+@590  = ~Ah... la forêt. Cet effet apaisant que peut produire la nature est tout bonnement merveilleux.~
+@591  = ~C'est vrai. Mais il faut toujours rester en alerte. On ne peut jamais savoir quelle créature maléfique se cache dans l'ombre de ces arbres majestueux.~
+@592  = ~Tu as l'air très à l'aise ici. Tu as sans doute l'habitude de voyager dans des régions inhabitées ?~
+@593  = ~En réalité, ce fut difficile au début. Les rigueurs de la route sont dures pour tout aventurier, et à l'époque encore plus pour une novice comme moi. Mais je suppose que je me suis plutôt bien adaptée à tous ces voyages.~
+@594  = ~C'est ce qu'il semble. Tu te débrouilles très bien. Je dois admettre que lorsque j'ai découvert la vie dans les bois, ce ne fut pas facile du tout. Passer les treize premières années de ma vie dans les bas-quartiers d'une ville très peuplée, puis déménager dans une forêt aussi vaste que Bois-Manteau sur la Côte des Epées... fut une expérience plutôt intéressante.~
+@595  = ~Je dirais que tu as quitté une jungle pour une autre.~
+@596  = ~Oui, maintenant que j'y pense, c'est une image très juste. C'est agréable de discuter avec toi, Mazzy. Tu comprends ce que je dis, et pas seulement au premier degré.~
+@597  = ~(Elle sourit) Je suis heureuse que tu penses cela, Sarah. J'aime aussi beaucoup parler avec toi. Tu as l'air calme, tu me donnes le sentiment de vraiment écouter la moindre phrase que je prononce.~
+@598  = ~Je te remercie de ces belles paroles, Dame Mazzy.~
+
+// dialogue Sarah - Aerie 1
+
+@599  = ~Aerie, j'ai remarqué que tu m'observes beaucoup depuis un moment. Quelque chose te tracasse ?~
+@600  = ~R-rien d'important. Je me d-demandais juste quel effet cela faisait d'avoir g-grandi dans les bas-quartiers.~
+@601  = ~Je... eh bien, euh... je suis sûre que c'était probablement très différent de ce que tu as vécu. Je vivais avec mon père, tu vois.~
+@602  = ~Il nous fallait prendre certaines précautions pour notre sécurité... verrouiller nos portes, rester bien à l'écart des types louches, mais en toute honnêteté il y a des enfants qui grandissent dans des endroits bien pires.~
+@603  = ~Mais pourquoi cette question, ma belle ?~
+@604  = ~Eh bien nous n'avons p-pas vraiment de b-bas-quartiers dans nos cités. T-tout est beau, et sans danger. Je me demandais c-comment on p-peut vivre dans ces c-conditions.~
+@605  = ~(Elle rit) Voyons Aerie, à t'entendre on dirait que j'ai grandi dans un égout ! Je dois admettre que la ville n'était pas bien belle, mais ce fut mon foyer pendant des années, et tant que mon père fut présent je m'y sentais chez moi... malgré ses mauvais côtés.~
+
+// dialogue Sarah - Aerie 2
+
+@606  = ~Aerie, depuis que nous voyageons ensemble j'ai remarqué que tu as tendance à plus regarder le sol que ce qui nous environne. Pourquoi ?~
+@607  = ~P-parce que j'ai mal aux pieds, Sarah. Je ne suis pas habituée à... marcher autant.~
+@608  = ~Tu n'as jamais voyagé avant ? J'avais supposé que c'était le cas, pour une jolie elfette avec tant d'années d'expérience. Mais je présume qu'il te reste énormément de temps pour explorer le monde.~
+@609  = ~On m'a c-coupé les ailes lorsque j'étais une attraction au c-cirque. Ensuite, on me tenait enfermée dans une c-cage. Je n'ai jamais p-pu aller nulle part.~
+@610  = ~C'est lamentable, Aerie, et je m'excuse si je t'ai faite souffrir en évoquant ce sujet. Mais j'espère qu'en voyageant avec <CHARNAME> tu finiras par prendre l'habitude de la route.~
+@611  = ~M-merci.~
+
+// dialogue Sarah - Jaheira 1
+
+@612  = ~Ton respect de la nature force l'admiration, Jaheira.~
+@613  = ~Je te remercie mon enfant, mais je ne fais que mon devoir : La protéger.~
+@614  = ~Je me considère aussi comme une protectrice de la nature, mais plus du tout comme une enfant. J'aimerais beaucoup que tu me racontes comment tu t'es retrouvée à ce point connectée à elle.~
+@615  = ~Mon foyer et ma famille ont été détruits lorsque j'étais enfant. Plus tard, on m'a amenée dans un bosquet où les druides m'ont élevée avec tous leurs fidèles.~
+@616  = ~Je suis vraiment navrée d'entendre cela. J'ai moi aussi perdu la plus grande partie de ma famille il y a des années. Une fois mon père décédé, je n'avais plus vraiment de foyer où me réfugier.~
+@617  = ~Je suis désolée. On dirait que <CHARNAME> attire des gens comme nous, n'est-ce pas ?~
+@618  = ~Hé... mais tu viens de faire un jeu de mots, Jaheira ?~
+@619  = ~Humm... peut-être.~
+
+// dialogue Sarah - Jaheira 2
+
+@620  = ~Parle-moi de Silvanus.~
+@621  = ~Mon enfant, Il y aurait plus à dire sur Silvanus que je ne peux te raconter maintenant. La prochaine fois que nous serons en ville, je te suggère de trouver un livre à ce sujet.~
+@622  = ~Bien sûr Jaheira. Je ne voulais pas t'ennuyer.~
+
+// dialogue Sarah - Anomen
+
+@623  = ~Je suppose que ton père était fier de ta décision de rejoindre l'Ordre, Anomen ?~
+@624  = ~Comment ? Non, pas du tout. Il s'opposait à mes décisions à la moindre occasion, et je n'aurais jamais pu le faire si ma mère n'avait pas été là.~
+@625  = ~Mais pourquoi cette question, et de cette façon-là ?~
+@626  = ~Eh bien tu sembles heureux de ton choix, et puis j'aurais pensé que n'importe quel parent serait fier de voir son fils rejoindre l'Ordre. Je suis navrée que ce n'ait pas été le cas avec ton père.~
+@627  = ~C'est ma mère qui en était fière. Mais cela fait longtemps qu'elle est décédée.~
+@628  = ~C'est triste. Ma mère nous a abandonnés alors que j'étais encore très jeune et je ne sais pas si elle est encore vivante. Cependant c'est bon que tu poursuives une cause en laquelle tu crois plutôt que d'en être empêché par quelqu'un.~
+@629  = ~Oui, je suis très heureux de ne plus subir l'influence de mon père.~
+@630  = ~Je vous présente mes condoléances. Les affaires de famille sont souvent pénibles.~
+@631  = ~Merci, même si je n'avais pas l'intention de t'accabler avec mon passé tragique. J'espère cependant que tu trouveras chez l'Ordre ce que tu cherches. Il est bon d'avoir une cause pour laquelle se battre.~
+@632  = ~J'espère que vous aussi trouverez ce que vous cherchez, Dame Sarah.~
+
+// dialogue Sarah - Imoen
+
+@633  = ~Tu es une magicienne très douée pour ton âge, Imoen. Même si je suis sûre que tu en as assez des gens qui font des remarques sur ton âge.~
+@634  = ~Les gens ne font pas le même genre de remarque à ton sujet ?~
+@635  = ~Lorsque j'étais plus jeune, je n'avais pas le droit de toucher aux armes où à la magie quelle qu'elle soit. Mon père croyait qu'elles n'amenaient que du malheur.~
+@636  = ~D'une certaine manière, il avait raison.~
+@637  = ~Peut-être. Mais elles aident à protéger ceux qui sont impuissants contre ceux qui les utilisent pour faire le mal. Ah, ainsi va le monde, je présume.~
+@638  = ~Certainement.~
+
+// dialogue Sarah - Jan
+
+@639  = ~Quelque chose ne va pas, Jan ? Tu me regardes bizarrement.~
+@640  = ~J'ai une question un peu sensible à te poser, ma belle, mais tant pis je me lance : as-tu déjà volé avec les griffons ? C'est quelque chose qu'il faut que je sache, comme tout Jansen qui se respecte.~
+@641  = ~Euh... volé avec les griffons ?~
+@642  = ~Eh bien, t'être fait pousser des ailes et être allée fraterniser avec ces bâtards à plumes. Si c'est le cas je vais devoir prendre des mesures appropriées, et elles ne seront pas à prendre à la légère. Voyons, la dernière fois qu'un membre du clan Jansen est parti à la chasse au griffon c'était en '47, lorsque le vieux Flunkabutt s'est fait prendre pour...~
+@643  = ~Connivence avec les griffons. On n'a *jamais* réussi à enlever les taches de la moquette...~
+@644  = ~Hum... ceci est vraiment... tragique. Mais non, je ne me souviens pas avoir déjà "volé" avec tes griffons, mon ami.~
+@645  = ~Mais c'est le cas pour toi, je présume ?~
+@646  = ~QUOI ? Tu veux salir mon honneur en répandant des calomnies, c'est ça ? Impertinente jeune fille, sache que jamais de la vie je ne toucherais un griffon, même si le Duc de la Contrainte et du Mensonge m'offrait un millier de navets !~
+@647  = ~Même pas pour un million de navets ?~
+@648  = ~As-tu déjà *vu* les problèmes d'insectes nuisibles qui surviennent avec un stock de navets de cette taille ? Honnêtement, pour une rôdeuse, tu as du mal à comprendre comment fonctionne vraiment notre bonne et verte Nature. Tatie Samuelina disait : "quand un rôdeur arrive, les embrouilles suivent !"~
+@649  = ~Bon, je suis certaine que ta tante... Semolina est très sage, malgré son antipathie pour les rôdeurs.~
+@650  = ~Fichtre non, c'est une vieille chouette cinglée. Elle te plairait !~
+@651  = ~... J'en suis sûre.~
+
+// dialogue Sarah - Valygar
+
+@652  = ~Tu sais Valygar, bien que je t'aie observé de loin, je suis navrée de ne pas avoir cherché à mieux te connaître avant.~
+@653  = ~Il n'y a pas de quoi vous excuser, Sarah. Vous avez certainement remarqué que je n'ai pas non plus fait beaucoup d'efforts dans ce sens. Nous étions tous deux absorbés par nos occupations.~
+@654  = ~Oui, tu as raison... mais nous aurions peut-être formé une bonne équipe.~
+@655  = ~Rien ne nous en empêche. Vous avez très bien développé vos talents. Avez-vous eu un mentor pour vous enseigner ce que vous savez ?~
+@656  = ~Certainement... mon oncle, en fait. Et je suis très honorée de travailler avec quelqu'un qui partage mon affinité avec la nature.~
+@657  = ~Très bien. J'espère cependant que vous n'êtes pas à la recherche d'un camarade très... sociable.~
+
+// dialogue Sarah - Keldorn
+
+@658  = ~Belle journée Sir Keldorn, n'est-ce pas ?~
+@659  = ~Oui ma Dame, vraiment.~
+@660  = ~Vous arrive-t-il souvent d'aller en forêt ? Je veux dire, dans le cadre de vos missions pour l'Ordre.~
+@661  = ~Parfois, oui. D'autres fois je suis convoqué dans certaines villes. Vous avez l'air de vous plaire en forêt.~
+@662  = ~Pour sûr. Je ne connais dans ce monde aucun endroit aussi paisible qu'une forêt.~
+@663  = ~Oui, bon... je suppose que nous avons tous notre propre idée de l'endroit le plus paisible qui soit, n'est-ce pas ?~
+@664  = ~C'est certain.~
+
+// dialogue Sarah - Yoshimo
+
+@665  = ~Tu es bien loin de chez toi, n'est-ce pas Yoshimo ?~
+@666  = ~Oui demoiselle, mais le fait que mon pays natal soit loin ne me fait pas perdre de vue la direction à suivre.~
+@667  = ~Nous sommes ici pour aider notre bon <CHARNAME>. Que j'aie ou non le mal du pays ne rentre pas en ligne de compte, n'est-ce pas ?~
+@668  = ~Euh... bien sûr. Tu as raison Yoshimo, nous ne devons pas laisser ce genre de choses entraver notre quête.~
+@669  = ~Ah, mon petit doigt me dit que quelque chose trouble votre esprit.~
+@670  = ~Non ! Enfin... rien d'important. Je crois que je ne peux m'empêcher de me demander comment va mon oncle.~
+@671  = ~Vous vous faites du souci pour un membre de votre famille ? Je crois que je peux comprendre.~
+@672  = ~Mon bon monsieur, mon oncle est la seule famille qu'il me reste et je ne sais pas comment je réagirais si quelque chose lui arrivait.~
+@673  = ~Inutile d'avoir ce genre de pensée. Votre oncle vous a appris à survivre, non ? Alors je suis certain que l'homme qui a appris à survivre à la puissante Dame Sarah que je connais se débrouillera très bien tout seul.~
+@674  = ~Je suppose... que je m'inquiète trop. Tu as raison Yoshimo. Je vais bien méditer tes paroles.~
+
+// dialogue Sarah - Viconia
+
+@675  = ~Viconia, tu me regardes comme si j'étais sur le point de t'attaquer.~
+@676  = ~Et pourquoi ne le ferais-tu pas ?~
+@677  = ~Pourquoi le ferais-je ? Cela ne serait bon ni pour moi, ni pour le groupe. Je suis là pour aider <CHARNAME>, pas pour me coltiner tes remarques narquoises sur ma race, ou toute autre race qui n'est pas la tienne, d'ailleurs.~
+@678  = ~En quel honneur parles-tu au nom du groupe ? Tu ne peux pas sérieusement espérer que je te fasse confiance après ce que ton peuple de faibles d'esprit a raconté à mon sujet et au sujet des miens.~
+@679  = ~Je pourrais te demander la même chose. Tu te permets de parler au nom de ton peuple tout entier, et dans ce cas je me demande bien pourquoi tu te fatigues à voyager avec nous.~
+@680  = ~<CHARNAME> m'a sauvée d'un destin funeste alors que j'estimais que mon heure n'était pas venue. Je lui dois un service en échange. Au-delà de ça, les raisons pour lesquelles je reste ne regardent que moi, et je te conseille de ne pas chercher à en savoir plus.~
+@681  = ~Peu importe, Viconia.~
+
+// dialogue Sarah - Minsc
+
+@682  = ~... J'ai du mal à comprendre, Minsc.~
+@683  = ~Ha ! Tout grand héros doit en avoir un, ma chère collègue !~
+@684  = ~Je... je le suppose, mais je n'en ai jamais vraiment eu l'utilité.~
+@685  = ~Oh, mais tu la trouveras. Minsc et Bouh en ont sacrément eu besoin après avoir commencé à voyager avec <CHARNAME>. Le Mal sera mort de trouille, effet garanti !~
+@686  = ~Euh... cela le fera tout du moins trembler et souiller son pantalon !~
+@687  = ~Je ne crois pas avoir besoin d'un cri de guerre spécial, Minsc, mais merci pour ton offre.~
+@688  = ~Ah, ne t'inquiète pas petite Sarah. Bouh ne va pas tarder à t'en trouver un !~
+
+// Corrections
+
+@689  = ~... Comme tu voudras, <CHARNAME>. Je n'en parlerai plus. Continuons notre route.~
+@690  = ~Si tu le dis... je pense que nous devrions nous mettre en route.~
+@691  = ~Tu es vraiment la personne qu'il me fallait.~
