@@ -11,12 +11,22 @@ AUTO_TRA ~sarahtob/translations/%s~
 
 // Code borrowed from Edwin Romance V206, using the new HANDLE_CHARSETS function
 ALWAYS
-  INCLUDE ~%MOD_FOLDER%/handle_charsets.tpa~
+  ACTION_IF GAME_IS ~eet~ BEGIN
+    OUTER_SET bg2_chapter = 12
+  END ELSE BEGIN
+    OUTER_SET bg2_chapter = 0
+  END
+  OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
+    OUTER_SET bg2_chapter = bg2_chapter + 1
+    OUTER_SPRINT name_source ~bg2_chapter_%i%~
+    OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+  END
+
   ACTION_DEFINE_ARRAY fl#noconvert BEGIN END
   ACTION_DEFINE_ARRAY fl#reload BEGIN setup END
   LAF HANDLE_CHARSETS
     INT_VAR
-      infer_charset = 1
+      infer_charsets = 1
     STR_VAR
       tra_path = EVAL ~%MOD_FOLDER%/translations~
       // charset_table = fl#charsets // Included for illustrative purposes.
@@ -162,10 +172,10 @@ SAY SELECT_COMMON3 ~ ~
 
 // Adds Dialogue Files
 
-COMPILE ~SarahToB/Dialogues/K#Sarah.d~
+COMPILE EVALUATE_BUFFER ~SarahToB/Dialogues/K#Sarah.d~
 COMPILE ~SarahToB/Dialogues/K#SarahB.d~
 COMPILE ~SarahToB/Dialogues/K#VMPSRH.d~
-COMPILE ~SarahToB/Dialogues/K#SarahJ.d~
+COMPILE EVALUATE_BUFFER ~SarahToB/Dialogues/K#SarahJ.d~
 COMPILE ~SarahToB/Dialogues/K#Gurie.d~
 COMPILE ~SarahToB/Dialogues/K#Anna.d~
 
@@ -177,7 +187,7 @@ END
 // Adds Scripts
 COMPILE ~SarahToB/Scripts/K#VMPSRH.baf~
 COMPILE ~SarahToB/Scripts/K#SarahD.baf~
-COMPILE ~SarahToB/Scripts/K#Sarah.baf~
+COMPILE EVALUATE_BUFFER ~SarahToB/Scripts/K#Sarah.baf~
 COMPILE ~SarahToB/Scripts/K#Anna.baf~
 COMPILE ~SarahToB/Scripts/K#Gurie.baf~
 EXTEND_BOTTOM ~AR1100.bcs~ ~SarahToB/Scripts/AR1100.baf~
@@ -274,11 +284,28 @@ SAY NAME2 @54
 // Adds Dialogue
 COMPILE ~SarahToB/Dialogues/K#Sara25.d~
 COMPILE ~SarahToB/Dialogues/K#Sar25B.d~
-COMPILE ~SarahToB/Dialogues/K#fates.d~
 COMPILE ~SarahToB/Dialogues/K#Sar25J.d~
 COMPILE ~SarahToB/Dialogues/K#Sar25P.d~
 COMPILE ~SarahToB/Dialogues/K#ANNA1.d~
 COMPILE ~SarahToB/Dialogues/K#LOVES.d~
+
+ACTION_IF GAME_IS ~eet~ BEGIN
+  INCLUDE ~EET/other/EET_functions.tph~
+  LAF ~EET_NPC_TRANSITION~
+    INT_VAR
+      type = 2
+    STR_VAR
+      dv = "K#SARAH"
+      override_SoA = "K#SARAH"
+      override_ToB = "K#SARA25"
+      dialog_ToB = "K#SARA25"
+      traFile = EVAL "SarahToB/translations/%LANGUAGE%/k#fates.tra"
+      string = "@1" //Bring me Sarah, the human ranger.
+      stringPosDV = "SharTeel"
+  END
+END ELSE BEGIN
+  COMPILE ~SarahToB/Dialogues/K#fates.d~
+END
 
 // Epilogues
 
@@ -331,7 +358,7 @@ LAF HANDLE_AUDIO END
 
 // Adds Portraits
 
-ACTION_IF GAME_IS ~bg2ee~ BEGIN
+ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
 COPY ~SarahToB/Portraits/ee~ ~override~
 END ELSE BEGIN
 COPY ~SarahToB/Portraits/bg2~ ~override~
