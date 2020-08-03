@@ -211,7 +211,7 @@ END
 // Reputation
 
 IF ReputationLT(Player1,3)
-Global("K#RepSarah","LOCALS",0)
+Global("K#Repxcomplain","LOCALS",0)
 THEN
 RESPONSE #100
 StartDialogNoSet(Player1)

@@ -299,6 +299,8 @@ IF
 RealGlobalTimerExpired("K#SarahRingTimer","GLOBAL")
 InParty("K#Sarah")
 See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
 Global("K#SarahSexLovetalk","GLOBAL",5)
 Global("K#SarahRomanceActive","GLOBAL",2)
 THEN
@@ -334,8 +336,10 @@ END
 // Vampire Talk
 
 IF
-InParty(Myself)
-InParty(Player1)
+InParty("K#Sarah")
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
 See("VAMPIRE")
 Global("K#SarahSawVamp","GLOBAL",0)
 THEN
@@ -394,7 +398,9 @@ END
 
 IF
 InParty("K#Sarah")
-InParty(Player1)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
 !ActuallyInCombat()
 Global("K#SarahQuest","GLOBAL",4)
 THEN
@@ -406,8 +412,13 @@ END
 
 // Reputation
 
-IF ReputationLT(Player1,3)
-Global("K#RepSarah","LOCALS",0)
+IF 
+InParty("K#Sarah")
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+ReputationLT(Player1,3)
+Global("K#Repxcomplain","LOCALS",0)
 THEN
 RESPONSE #100
 StartDialogNoSet(Player1)
@@ -424,6 +435,10 @@ SetGlobal("K#SarahDead","GLOBAL",1)
 END
 
 IF
+InParty("K#Sarah")
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
 Global("K#SarahDead","GLOBAL",1)
 THEN
 RESPONSE #100
@@ -434,18 +449,33 @@ END
 
 
 IF
-!GlobalTimerNotExpired("K#SarahQuestWait","GLOBAL")
-InParty(Player1)
+GlobalTimerExpired("K#SarahQuestWaitTimer","GLOBAL")
 InParty("K#Sarah")
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
 !Global("Chapter","GLOBAL",%bg2_chapter_4%)
 !Global("Chapter","GLOBAL",%bg2_chapter_5%)
 !Global("Chapter","GLOBAL",%bg2_chapter_7%)
 !ActuallyInCombat()
 Global("K#SarahQuest","GLOBAL",2)
 !Global("K#SarahQuestWait","GLOBAL",2)
+Global("K#SarahLeavingAngry","LOCALS",0)
 THEN
 RESPONSE #100
-Interact(Player1)
+SetGlobal("K#SarahLeavingAngry","LOCALS",1)
+END
+
+IF
+InParty("K#Sarah")
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!ActuallyInCombat()
+Global("K#SarahLeavingAngry","LOCALS",1)
+THEN
+RESPONSE #100
+Dialogue(Player1)
 END
 
 
