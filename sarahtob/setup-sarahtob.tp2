@@ -1,7 +1,7 @@
 BACKUP ~SarahToB/backup~
 AUTHOR ~theacefes (theacefes@gibberlings3.net)~
 
-VERSION ~5~
+VERSION ~6~
 README ~SarahToB/readme-sarahtob.html~
 
 //MODDER
@@ -289,24 +289,6 @@ COMPILE ~SarahToB/Dialogues/K#Sar25P.d~
 COMPILE ~SarahToB/Dialogues/K#ANNA1.d~
 COMPILE ~SarahToB/Dialogues/K#LOVES.d~
 
-ACTION_IF GAME_IS ~eet~ BEGIN
-  INCLUDE ~EET/other/EET_functions.tph~
-  LAF ~EET_NPC_TRANSITION~
-    INT_VAR
-      type = 2
-    STR_VAR
-      dv = "K#SARAH"
-      override_SoA = "K#SARAH"
-      override_ToB = "K#SARA25"
-      dialog_ToB = "K#SARA25"
-      traFile = EVAL "SarahToB/translations/%LANGUAGE%/k#fates.tra"
-      string = "@1" //Bring me Sarah, the human ranger.
-      stringPosDV = "SharTeel"
-  END
-END ELSE BEGIN
-  COMPILE ~SarahToB/Dialogues/K#fates.d~
-END
-
 // Epilogues
 
 // No Friendship
@@ -346,6 +328,25 @@ COMPILE ~SarahToB/Scripts/K#Sar25D.baf~
 COMPILE ~SarahToB/Scripts/K#LOVES.baf~
 COMPILE ~SarahToB/Scripts/K#ANNA1.baf~
 EXTEND_TOP ~ar6200.bcs~ ~SarahToB/Scripts/AR6200.baf~
+
+ACTION_IF GAME_IS ~eet~ BEGIN
+  INCLUDE ~EET/other/EET_functions.tph~
+  LAF ~EET_NPC_TRANSITION~
+    INT_VAR
+      type = 2
+    STR_VAR
+      dv = "K#SARAH"
+      override_SoA = "K#SARAH"
+      override_ToB = "K#SARA25"
+      dialog_ToB = "K#SARA25"
+      traFile = EVAL "SarahToB/translations/%LANGUAGE%/k#fates.tra"
+      string = "@1" //Bring me Sarah, the human ranger.
+      stringPosDV = "SharTeel"
+  END
+END ELSE BEGIN
+  COMPILE ~SarahToB/Dialogues/K#fates.d~
+END
+
 END
 
 //Adds Sounds
