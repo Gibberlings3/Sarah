@@ -37,7 +37,7 @@ IF ~~ THEN K#SarahJ SQ1-1
 @11
 = @12
 = @13
-DO ~SetGlobal("K#SarahQuest","GLOBAL",2)SetGlobal("K#SarahQuestWait","GLOBAL",1)SetGlobalTimer("K#SarahQuestWait","GLOBAL",SEVEN_DAYS)~
+DO ~SetGlobal("K#SarahQuest","GLOBAL",2)SetGlobal("K#SarahQuestWait","GLOBAL",1)SetGlobalTimer("K#SarahQuestWaitTimer","GLOBAL",SEVEN_DAYS)~
 EXIT
 
 CHAIN
@@ -398,15 +398,14 @@ EXIT
 
 
 CHAIN
-IF ~InParty("K#Sarah")
-InParty(Player1)
-!GlobalTimerNotExpired("K#SarahQuestWait","GLOBAL")
-!Global("K#SarahQuestWait","GLOBAL",2)~
+IF WEIGHT #-1
+~Global("K#SarahLeavingAngry","LOCALS",1)~
 THEN K#SarahJ TooLong
 @141
 = @142
 = @143
-DO ~SetGlobal("K#SarahQuestWait","GLOBAL",3)SetGlobal("K#SarahRomanceActive","GLOBAL",3)SetGlobal("K#SarahFriendshipActive","GLOBAL",2)SetGlobal("K#SarahJoined","LOCALS",0)LeaveParty()DropInventory()EscapeArea()~
+DO ~SetGlobal("K#SarahLeavingAngry","LOCALS",2)
+SetGlobal("K#SarahQuestWait","GLOBAL",3)SetGlobal("K#SarahRomanceActive","GLOBAL",3)SetGlobal("K#SarahFriendshipActive","GLOBAL",2)SetGlobal("K#SarahJoined","LOCALS",0)LeaveParty()DropInventory()EscapeArea()~
 EXIT
 
 
