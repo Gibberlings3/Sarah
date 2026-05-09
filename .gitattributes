@@ -2,27 +2,42 @@
 * text=auto
 
 # WeiDU/IE
-*.tp2 text
-*.tpa text
-*.tpp text
-*.tph text
-*.tra text
-*.2da text
-*.baf text
-*.d   text
-*.ids text
-*.bam binary
-*.plt binary
-*.mos binary
-*.vvc binary
-*.itm binary
-*.spl binary
-*.cre binary
-*.eff binary
-*.pro binary
+*.2da text eol=lf
+*.baf text eol=lf
+*.bat text eol=lf
+*.css text eol=lf
+*.d   text eol=lf
+*.html text eol=lf
+*.ids text eol=lf
+*.ini text eol=lf
+*.md text eol=lf
+*.mus text eol=lf
+*.tp2 text eol=lf
+*.tpa text eol=lf
+*.tph text eol=lf
+*.tpp text eol=lf
+*.tra text eol=lf
+*.yaml text eol=lf
 *.are binary
+*.bam binary
+*.bcs binary
+*.bmp binary
+*.cre binary
+*.dlg binary
+*.dll binary
+*.eff binary
+*.exe binary
+*.gif binary
+*.ico binary
+*.itm binary
+*.mos binary
+*.ogg binary
+*.plt binary
+*.pro binary
+*.spl binary
+*.sto binary
+*.vvc binary
 *.wed binary
 *.wmp binary
-*.sto binary
-*.bcs binary
-*.dlg binary
+*.zip binary
+sox binary

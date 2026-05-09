@@ -8,6 +8,7 @@
 !iconv.exe
 !oggdec.exe
 !tisunpack.exe
+!libiconv-1.9.2-1-src.zip
 setup-glamnpcpack
 setup-glamnpcpack.command
 GlamNPCPack/backup/*
